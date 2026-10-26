@@ -1,0 +1,272 @@
+{
+  "rubric_version": "0.2",
+  "generated": "2026-09-08",
+  "status": "SEED — THRESHOLDS UNCHANGED FROM v0.1 AND STILL GUESSES. v0.2 repairs the lexicons only: word-boundary matching, explicit stems marked with a trailing *, and removal of terms that matched ordinary catalog prose. Requires the build_matchers patch in SCORE_PATCH_v0.2.md — without it the * stems are matched literally and every stem goes dead.",
+  "measures": "What a school's catalog offers. Not what a graduate leaves with, and not what is required — see limitations.",
+  "limitations": [
+    "OFFERED, NOT REQUIRED. harvest.py reads course descriptions, not degree requirement sheets, so nothing here can distinguish a required professional-practice course from an elective nobody takes. The Venture axis in particular means much less without it. Either harvest program pages, or state plainly that edition one measures offering.",
+    "Denominator is the whole catalog, not the art catalog. A large public university dilutes: 40 art-business courses among 6,000 total scores lower than 10 among 400. Normalizing by CIP-50-relevant courses rather than all courses is unresolved.",
+    "Thresholds below are placeholders. They must be set from the observed distribution once enough schools are scored, and the rule used must be published."
+  ],
+  "axes": {
+    "technology": {
+      "name": "Art Technology Adoption",
+      "question": "Does this course teach making with computational or emerging tools, as practice rather than as a topic to discuss?",
+      "includes": [
+        "generative and AI tools used in making",
+        "creative coding, computational design, procedural work",
+        "digital fabrication, CNC, 3D printing",
+        "immersive, XR, virtual production, game engines",
+        "emerging media and hybrid analog-digital practice"
+      ],
+      "excludes": [
+        "general computer literacy or office software",
+        "art history or theory courses that discuss technology without making",
+        "IT, computer science, or engineering courses outside the arts"
+      ],
+      "lexicon": [
+        "generative",
+        "artificial intelligence",
+        "ai",
+        "machine learning",
+        "computation*",
+        "creative coding",
+        "algorithm*",
+        "procedural",
+        "digital fabrication",
+        "3d print*",
+        "cnc",
+        "laser cut*",
+        "immersive",
+        "virtual reality",
+        "augmented reality",
+        "extended reality",
+        "virtual production",
+        "game engine",
+        "unreal",
+        "unity",
+        "emerging media",
+        "new media",
+        "motion capture",
+        "projection mapping",
+        "physical computing",
+        "arduino",
+        "interactive installation"
+      ],
+      "thresholds": [
+        0.005,
+        0.015,
+        0.035,
+        0.07
+      ]
+    },
+    "venture": {
+      "name": "Entrepreneurship and Art Venture Training",
+      "question": "Does this course teach the business of an independent creative practice — money, contracts, clients, running a studio?",
+      "includes": [
+        "professional practice, business of art, career preparation for artists",
+        "pricing, valuation, negotiation",
+        "contracts, copyright, licensing, intellectual property for creators",
+        "grant writing, fundraising, patronage",
+        "studio operations, freelancing, self-employment, taxes",
+        "entrepreneurship and venture formation in a creative context"
+      ],
+      "excludes": [
+        "general business school courses with no creative-practice framing",
+        "arts administration or nonprofit management training administrators rather than artists",
+        "internship placeholders with no instructional content"
+      ],
+      "lexicon": [
+        "professional practice",
+        "professional practices",
+        "business of art",
+        "business practices",
+        "entrepreneur*",
+        "freelanc*",
+        "self-employ*",
+        "pricing",
+        "negotiat*",
+        "contract",
+        "contracts",
+        "contractual",
+        "copyright",
+        "licens*",
+        "intellectual property",
+        "royalt*",
+        "grant writing",
+        "fundrais*",
+        "commission",
+        "commissions",
+        "client*",
+        "studio management",
+        "studio practice business",
+        "career*",
+        "portfolio review",
+        "self-promotion",
+        "marketing your",
+        "art market",
+        "gallery representation",
+        "tax",
+        "taxes",
+        "taxation",
+        "invoice",
+        "budget"
+      ],
+      "thresholds": [
+        0.002,
+        0.006,
+        0.015,
+        0.03
+      ]
+    },
+    "self": {
+      "name": "Creative Self-Development Science",
+      "question": "Does this course teach creative process itself — how ideas form, how practice sustains — as distinct from technique or history?",
+      "includes": [
+        "creativity science, creative cognition, problem finding",
+        "flow, deliberate practice, habit and process",
+        "ideation and idea development taught as method",
+        "contemplative, somatic, or embodiment practice",
+        "critique method taught explicitly as a practice",
+        "artist wellbeing, burnout, long-arc practice sustainability"
+      ],
+      "excludes": [
+        "any studio course that merely involves making",
+        "psychology courses outside the arts unit",
+        "art therapy training clinicians rather than artists"
+      ],
+      "lexicon": [
+        "creative process",
+        "creativity",
+        "creative practice",
+        "ideation",
+        "idea generation",
+        "problem finding",
+        "flow state",
+        "deliberate practice",
+        "improvisation method",
+        "contemplat*",
+        "meditation",
+        "somatic",
+        "embodiment",
+        "mindful*",
+        "critique method",
+        "critical feedback",
+        "artistic development",
+        "sustaining a practice",
+        "burnout",
+        "creative block",
+        "reflective practice",
+        "studio habit"
+      ],
+      "thresholds": [
+        0.001,
+        0.004,
+        0.01,
+        0.02
+      ]
+    },
+    "audience": {
+      "name": "Audience and Distribution",
+      "question": "Does this course teach reaching and holding an audience without a gatekeeper?",
+      "includes": [
+        "exhibition and curatorial practice",
+        "documentation of one's own work",
+        "writing or speaking about one's own work, artist statements",
+        "publishing, self-publishing, distribution",
+        "digital platform and audience development, social media as practice",
+        "socially engaged, community-based, and public art"
+      ],
+      "excludes": [
+        "art history survey courses",
+        "communications or PR courses outside the arts unit",
+        "museum studies training curators rather than artists"
+      ],
+      "lexicon": [
+        "exhibit*",
+        "curat*",
+        "gallery practice",
+        "document*",
+        "artist statement",
+        "writing about art",
+        "artist talk",
+        "presentation of work",
+        "publish*",
+        "self-publish*",
+        "zine",
+        "zines",
+        "distribution",
+        "audience*",
+        "social media",
+        "platform*",
+        "online presence",
+        "community engagement",
+        "socially engaged",
+        "social practice",
+        "public art",
+        "site-specific",
+        "collaboration with community"
+      ],
+      "thresholds": [
+        0.004,
+        0.012,
+        0.028,
+        0.055
+      ]
+    }
+  },
+  "prefilter": {
+    "note": "Stage one is tuned for RECALL, not precision. Over-matching is fine and expected; stage two removes the false positives. Under-matching is invisible and unrecoverable, so err wide.",
+    "min_description_chars": 0,
+    "search_fields": [
+      "title",
+      "description"
+    ]
+  },
+  "classifier": {
+    "model": "claude-haiku-4-5-20251001",
+    "temperature": 0,
+    "batch_size": 20,
+    "note": "Temperature 0 and a cached result per course-text hash, so a rerun reproduces exactly. Every classification is logged with the model and rubric version."
+  },
+  "matching": {
+    "rule": "Each term is compiled with word boundaries. A trailing * means prefix match: 'negotiat*' matches negotiate, negotiating, negotiation.",
+    "why": "v0.1 stripped whitespace off every term before escaping it, so ' ai ' compiled to a bare substring 'ai' and matched painting, detail, available, maintain, chair. 'unity' matched community. 'tax' matched taxonomy. 'contract' matched contraction. On an art catalog the technology axis matched close to everything, which makes the shortlist rate useless as a diagnostic."
+  },
+  "flagged_for_author": {
+    "note": "Not changed in v0.2 — each is an editorial call, not a mechanical repair. Run lexprobe.py and decide from the counts and samples.",
+    "probably_dead_phrases": {
+      "self": [
+        "improvisation method",
+        "critique method",
+        "sustaining a practice",
+        "studio habit",
+        "creative block"
+      ],
+      "venture": [
+        "studio practice business",
+        "marketing your"
+      ],
+      "audience": [
+        "presentation of work",
+        "writing about art",
+        "collaboration with community"
+      ],
+      "why": "No registrar writes these. A dead term cannot lower a score, only fail to raise one — so the Self axis scoring near zero would be manufactured by the lexicon rather than found in the world. That is the index's strongest sentence and it must not be an artifact."
+    },
+    "high_carry_boilerplate": {
+      "venture": [
+        "career*"
+      ],
+      "audience": [
+        "distribution",
+        "audience*",
+        "exhibit*"
+      ],
+      "technology": [
+        "unity"
+      ],
+      "why": "Catalog boilerplate ('prepares students for careers in...', 'satisfies the general education distribution requirement', 'unity of composition'). Stage two rejects them correctly, but if one term carries >40% of an axis's shortlist the axis is measuring that word. Check carry% in lexprobe before spending on stage two."
+    }
+  }
+}

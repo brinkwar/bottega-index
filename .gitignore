@@ -1,0 +1,13 @@
+# data never belongs in this repository (catalogue text, verdict caches)
+data/
+*.jsonl
+scores_*/
+*.zip
+# built coder tools embed course descriptions; only the template is public
+study/coding_tool_*.html
+# secrets and local clutter
+.env
+*.key
+__pycache__/
+*.pyc
+.DS_Store

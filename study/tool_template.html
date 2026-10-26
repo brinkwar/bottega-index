@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coding — Bottega Index study</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F9F8F4;--ink:#2A2925;--ink2:#6E6B63;--line:#DCDAD2;--band:#F1EFE8;--acc:#C8853F;--navy:#0B1524;--on:#C8853F;--onink:#fff}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121620;--ink:#E8ECF3;--ink2:#A5AEC0;--line:#2B3446;--band:#1A2030;--acc:#E0A040;--navy:#C9CBCF;--on:#E0A040;--onink:#121620}}
+:root[data-theme="dark"]{--bg:#121620;--ink:#E8ECF3;--ink2:#A5AEC0;--line:#2B3446;--band:#1A2030;--acc:#E0A040;--navy:#C9CBCF;--on:#E0A040;--onink:#121620}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;font-size:17px;line-height:1.55}
+.wrap{max-width:1180px;margin:0 auto;padding:22px 20px 60px}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:28px;align-items:start}@media(max-width:900px){.cols{grid-template-columns:1fr}}
+.rules{background:var(--band);border-radius:8px;padding:14px 16px;font-size:14px;line-height:1.45;position:sticky;top:12px}.rules h3{font-family:"Playfair Display",serif;font-size:15px;margin:0 0 8px}.rules dl{margin:0}.rules dt{font-weight:600;margin-top:8px}.rules dt b{display:inline-block;width:20px;color:var(--acc);font-family:"Playfair Display",serif}.rules dd{margin:2px 0 0 20px;color:var(--ink)}.rules .step{margin:6px 0 0;padding-left:18px}.rules .step li{margin:0 0 4px}.rules .sm{color:var(--ink2);font-size:13px;margin:8px 0 0}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:18px}
+.top b{font-family:"Playfair Display",serif;font-size:18px}.top a{color:var(--ink2)}
+.prog{height:6px;background:var(--band);border-radius:3px;overflow:hidden;margin:0 0 18px}.prog i{display:block;height:100%;background:var(--acc);width:0}
+.meta{color:var(--ink2);font-size:14px;margin:0 0 6px}
+h2{font-family:"Playfair Display",serif;font-weight:600;font-size:24px;margin:0 0 10px}
+.desc{font-size:17.5px;max-width:74ch;margin:0 0 22px;white-space:pre-wrap}
+.desc.empty{color:var(--ink2);font-style:italic}
+.axes{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
+.ax{font:inherit;font-size:16px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:10px 14px;cursor:pointer;min-width:150px;text-align:left}
+.ax b{display:inline-block;width:22px;font-family:"Playfair Display",serif;font-size:18px;color:var(--acc)}
+.ax[aria-pressed="true"]{background:var(--on);border-color:var(--on);color:var(--onink)}.ax[aria-pressed="true"] b{color:var(--onink)}
+.flags .ax{min-width:120px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:14px}
+.go{font:inherit;font-size:17px;background:var(--navy);color:var(--bg);border:0;border-radius:8px;padding:11px 22px;cursor:pointer}
+.hint{color:var(--ink2);font-size:14px}
+input[type=text]{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);width:100%;max-width:520px}
+.card{background:var(--band);border-radius:8px;padding:18px 20px;max-width:74ch}
+textarea{width:100%;height:160px;font:13px monospace;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:8px}
+.btn{font:inherit;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:9px 16px;cursor:pointer}
+.ok{color:var(--acc);font-weight:600}
+</style></head><body><div class="wrap">
+<div class="top"><b>Bottega Index coding study</b><span class="meta" id="mode"></span><a href="__CODEBOOK_URL__" target="_blank" rel="noopener">Codebook ↗</a></div>
+<div class="prog"><i id="bar"></i></div>
+<div id="app"></div>
+</div>
+<script>
+const ITEMS = __ITEMS__;   // [{item_id, code, title, description}] — nothing else is in this page
+const SET = "__SET__";     // "calibration" or "main"
+const CODEBOOK_URL = "__CODEBOOK_URL__";
+const RULES=`<aside class="rules" aria-label="Coding rules">
+<h3>Mark every axis that applies</h3>
+<dl>
+<dt><b>T</b> Technology</dt><dd>A named tool, software or computational method is the <em>subject</em>. A studio that merely uses a tool is not T.</dd>
+<dt><b>P</b> Practice</dt><dd>Teaches how to be hired: portfolio, résumé, interviewing, internship, licensure, submission.</dd>
+<dt><b>V</b> Venture</dt><dd>Teaches entrepreneurship or entrepreneurial skills to art students, at any level — intro, survey, theory, economics of the field, own enterprise or not.</dd>
+<dt><b>S</b> Self</dt><dd>The creative process itself is the subject: how ideas form, how a practice is sustained. "Develop a personal voice" in a studio is not S.</dd>
+<dt><b>A</b> Audience</dt><dd>Reaching people directly: marketing, sales, social media, self-distribution. Art history about media is not A.</dd>
+</dl>
+<h3 style="margin-top:12px">V or P — decide in this order</h3>
+<ol class="step">
+<li>Mainly describes how an industry or marketplace operates, from outside? → <b>not V</b> (usually nothing).</li>
+<li>Teaches the student to be hired? → <b>P</b>.</li>
+<li>Teaches entrepreneurship, at any level? → <b>V</b>.</li>
+<li>Both pull equally after the whole description? → <b>E</b>.</li>
+</ol>
+<p class="sm">Arts administration is never V. The title is not evidence. Nothing marked is the most common answer. <b>X</b> only when the text is missing or a stub. V and P clear each other.</p>
+</aside>`;
+const AXES=[['T','Technology'],['P','Practice'],['V','Venture'],['S','Self'],['A','Audience']];
+const FLAGS=[['E','Either (V or P)'],['X','Cannot tell']];
+const KEY='bottega_coding_'+SET;
+let state=null;      // {coder, order:[item_id...], answers:{item_id:{T,P,V,S,A,E,X,note,ms,at}}, started}
+let cur={};          // current selections
+let t0=Date.now();
+const $=s=>document.querySelector(s);
+function load(){try{const s=localStorage.getItem(KEY);if(s)state=JSON.parse(s);}catch(e){}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
+// deterministic shuffle from coder id so each coder sees a different order
+function seeded(str){let h=2166136261;for(const c of str){h^=c.charCodeAt(0);h=Math.imul(h,16777619)>>>0;}return()=>{h=(Math.imul(h,1664525)+1013904223)>>>0;return h/4294967296;};}
+function shuffle(arr,rnd){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(rnd()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function start(coder){const rnd=seeded(coder.toLowerCase()+'|'+SET);state={coder,set:SET,order:shuffle(ITEMS.map(x=>x.item_id),rnd),answers:{},started:new Date().toISOString()};save();render();}
+function next(){const done=Object.keys(state.answers).length;return state.order.find(id=>!state.answers[id])||null;}
+function render(){const app=$('#app');$('#mode').textContent=SET==='calibration'?'Calibration set':SET==='main'?'Main set':'Supplementary set';
+ if(!state){app.innerHTML=`<div class="card"><h2>Before you start</h2><p>Read the <a href="${CODEBOOK_URL}" target="_blank" rel="noopener">codebook</a> once. Then enter the coder ID you were given. Your progress is saved in this browser; you can close the tab and come back.</p><p><input type="text" id="coder" placeholder="Coder ID (e.g. R1)" autocomplete="off"></p><p><button class="go" id="begin">Begin</button></p><p class="hint">${ITEMS.length} courses. Read the whole description, press the letters that apply, then Enter. You cannot go back.</p></div>`;
+  $('#begin').onclick=()=>{const v=$('#coder').value.trim();if(v)start(v);};$('#coder').onkeydown=e=>{if(e.key==='Enter')$('#begin').click();};$('#coder').focus();return;}
+ const id=next();const n=Object.keys(state.answers).length;$('#bar').style.width=(100*n/ITEMS.length)+'%';
+ if(!id){app.innerHTML=`<div class="card"><h2>Done — ${ITEMS.length} of ${ITEMS.length}</h2><p class="ok">Thank you. Please export your answers and send the file to Brink.</p><p><button class="go" id="export">Export answers</button> <button class="btn" id="show">Show as text instead</button></p><div id="exp"></div><p class="hint">Coder ${state.coder} · started ${state.started}</p></div>`;
+  $('#export').onclick=doExport;$('#show').onclick=showText;return;}
+ const it=ITEMS.find(x=>x.item_id===id);cur={};t0=Date.now();
+ app.innerHTML=`<div class="cols"><div><p class="meta">${n+1} of ${ITEMS.length} · <span id="code">${esc(it.code)}</span></p><h2>${esc(it.title)}</h2>
+ <div class="desc${it.description?'':' empty'}">${it.description?esc(it.description):'(no description)'}</div>
+ <div class="axes">${AXES.map(([k,l])=>`<button class="ax" data-k="${k}" aria-pressed="false"><b>${k}</b>${l}</button>`).join('')}</div>
+ <div class="axes flags">${FLAGS.map(([k,l])=>`<button class="ax" data-k="${k}" aria-pressed="false"><b>${k}</b>${l}</button>`).join('')}</div>
+ <div class="row"><button class="go" id="commit">Next (Enter)</button><span class="hint">Press the letters, then Enter.</span></div></div>`+RULES+`</div>`;
+ document.querySelectorAll('.ax').forEach(b=>b.onclick=()=>toggle(b.dataset.k));$('#commit').onclick=commit;}
+function toggle(k){if(k==='V'&&!cur.V){cur.P=false;}if(k==='P'&&!cur.P){cur.V=false;}if(k==='X'&&!cur.X){cur={X:true};}else{cur[k]=!cur[k];if(cur.X&&k!=='X')cur.X=false;}
+ document.querySelectorAll('.ax').forEach(b=>b.setAttribute('aria-pressed',!!cur[b.dataset.k]));}
+function commit(){const id=next();if(!id)return;const a={};[...AXES,...FLAGS].forEach(([k])=>a[k]=cur[k]?1:0);a.ms=Date.now()-t0;a.at=new Date().toISOString();state.answers[id]=a;save();render();}
+document.addEventListener('keydown',e=>{if(!state||e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')return;const k=e.key.toUpperCase();if(['T','P','V','S','A','E','X'].includes(k)){e.preventDefault();toggle(k);}else if(e.key==='Enter'){e.preventDefault();commit();}});
+function payload(){return JSON.stringify({study:'bottega-index-reliability',set:SET,coder:state.coder,started:state.started,exported:new Date().toISOString(),n:ITEMS.length,order:state.order,answers:state.answers},null,1);}
+async function doExport(){const data=payload();const fn=`coding_${SET}_${state.coder}.json`;let dl=null;try{dl=window.claude&&window.claude.use?await window.claude.use('downloads'):null;}catch(e){}
+ if(dl){try{await dl.save({filename:fn,data});$('#exp').innerHTML='<p class="ok">Saved. Send the file to Brink.</p>';return;}catch(e){if(e&&e.code==='declined'){$('#exp').innerHTML='<p class="hint">Save cancelled.</p>';return;}}}
+ showText();}
+function showText(){$('#exp').innerHTML=`<p class="hint">Copy everything below and paste it into a message to Brink.</p><textarea id="ta" readonly>${esc(payload())}</textarea><p><button class="btn" id="copy">Copy</button> <span id="cp"></span></p>`;
+ $('#copy').onclick=async()=>{try{await navigator.clipboard.writeText(payload());$('#cp').textContent='Copied.';}catch(e){$('#ta').select();$('#cp').textContent='Select all and copy.';}};}
+function esc(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+load();render();
+</script></body></html>

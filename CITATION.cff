@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "bottega-index: pipeline and study code for The Bottega Index, 2026 edition"
+message: "If you use this software, please cite it as below, and cite the data via its DOI."
+type: software
+authors:
+  - family-names: "Warren"
+    given-names: "Brinkley"
+    affiliation: "Art Morph Institute"
+    orcid: "https://orcid.org/0009-0009-6287-388X"
+version: "1.0.0"
+date-released: "2026-10-26"
+license: MIT
+repository-code: "https://github.com/brinkwar/bottega-index"
+keywords:
+  - art and design education
+  - curriculum analysis
+  - large language models
+  - text classification
+references:
+  - type: dataset
+    title: "The Bottega Index, 2026 edition"
+    authors:
+      - family-names: "Warren"
+        given-names: "Brinkley"
+    doi: "10.5281/zenodo.23573815"
+    version: "1.0.0"

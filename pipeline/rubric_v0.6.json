@@ -1,0 +1,431 @@
+{
+  "rubric_version": "0.6",
+  "generated": "2026-09-09",
+  "status": "SEED — THRESHOLDS UNCHANGED AND STILL GUESSES. v0.6 makes VENTURE and PRACTICE mutually exclusive with a stated tiebreak, tightens both excludes against senior studios and capstones that v0.5 misfiled, and adds a COMPOSITION taxonomy: twelve exhaustive one-per-course buckets over the whole art unit, so a dean sees what the curriculum is made of and not only how much of it the index cares about. Requires a new classifier path for composition; the axis prompt signature also changes.",
+  "measures": "What a school's catalog offers. Not what a graduate leaves with, and not what is required — see limitations.",
+  "limitations": [
+    "OFFERED, NOT REQUIRED. harvest.py reads course descriptions, not degree requirement sheets, so nothing here can distinguish a required professional-practice course from an elective nobody takes. The Venture axis in particular means much less without it. Either harvest program pages, or state plainly that edition one measures offering.",
+    "Denominator is the whole catalog, not the art catalog. A large public university dilutes: 40 art-business courses among 6,000 total scores lower than 10 among 400. Normalizing by CIP-50-relevant courses rather than all courses is unresolved.",
+    "Thresholds below are placeholders. They must be set from the observed distribution once enough schools are scored, and the rule used must be published."
+  ],
+  "axes": {
+    "technology": {
+      "name": "Art Technology Adoption",
+      "question": "Does this course teach making with computational or emerging tools — AI, code, generative systems, immersive media, digital fabrication — or teach a specific software or hardware toolset for creative work?",
+      "includes": [
+        "AI readiness, generative tools, machine learning as material",
+        "creative coding, computational and algorithmic making",
+        "immersive, XR, game engines, virtual production",
+        "digital fabrication, CNC, 3D printing, physical computing",
+        "named software or hardware toolsets taught for creative work"
+      ],
+      "excludes": [
+        "computer science, data science or engineering outside an art or design subject",
+        "art history or theory that discusses technology without making",
+        "technical trade production where the tool is the trade — audio plugin development, architectural lighting"
+      ],
+      "lexicon": [
+        "generative",
+        "artificial intelligence",
+        "ai",
+        "machine learning",
+        "computation*",
+        "creative coding",
+        "algorithm*",
+        "procedural",
+        "digital fabrication",
+        "3d print*",
+        "cnc",
+        "laser cut*",
+        "immersive",
+        "virtual reality",
+        "augmented reality",
+        "extended reality",
+        "virtual production",
+        "game engine",
+        "unreal",
+        "emerging media",
+        "new media",
+        "motion capture",
+        "projection mapping",
+        "physical computing",
+        "arduino",
+        "interactive installation",
+        "unity 3d",
+        "unity engine"
+      ],
+      "thresholds": [
+        0.005,
+        0.015,
+        0.035,
+        0.07
+      ]
+    },
+    "venture": {
+      "name": "Art Venture and Enterprise",
+      "question": "Does this course teach building an enterprise around your own creative work — business formation, revenue, pricing, funding, self-employment, running a studio as a business? The test is whether the student is taught to build something of their own, not to operate inside someone else's apparatus.",
+      "includes": [
+        "business formation, business models, startup and studio-as-business",
+        "pricing, revenue, contracts and negotiation for one's own work",
+        "self-employment, freelancing as an enterprise, financial management for artists",
+        "grant writing and fundraising to finance one's own practice",
+        "intellectual property, licensing and royalties as revenue"
+      ],
+      "excludes": [
+        "portfolio, interviewing, resume, submission preparation — PRACTICE",
+        "gallery submission, residency application, competition entry — PRACTICE",
+        "professional licensure, accreditation, internship placement — PRACTICE",
+        "SENIOR STUDIO, capstone, degree project, thesis studio — these are STUDIO, even when the description mentions professional context",
+        "medium and technique courses that mention industry or clients in passing — IMAGE DESIGN, ILLUSTRATING FOR SURFACE & PATTERN DESIGN are illustration courses",
+        "entrepreneurship taught outside art and design — The Entrepreneurial Bioengineer",
+        "accounting, finance or management taught for business students",
+        "arts administration training administrators rather than artists"
+      ],
+      "lexicon": [
+        "professional practice",
+        "professional practices",
+        "business of art",
+        "business practices",
+        "entrepreneur*",
+        "freelanc*",
+        "self-employ*",
+        "pricing",
+        "negotiat*",
+        "contract",
+        "contracts",
+        "contractual",
+        "copyright",
+        "licens*",
+        "intellectual property",
+        "royalt*",
+        "grant writing",
+        "fundrais*",
+        "commission",
+        "commissions",
+        "client*",
+        "studio management",
+        "career*",
+        "portfolio review",
+        "self-promotion",
+        "marketing your",
+        "art market",
+        "gallery representation",
+        "tax",
+        "taxes",
+        "taxation",
+        "invoice",
+        "budget"
+      ],
+      "thresholds": [
+        0.002,
+        0.006,
+        0.015,
+        0.03
+      ]
+    },
+    "practice": {
+      "name": "Professional Practice and Readiness",
+      "question": "Does this course teach operating inside an existing professional apparatus — portfolio, interviewing, submission, licensure, and the craft of curating, exhibiting or publishing? This is the control axis: it is what nearly every program already teaches, and it is what venture is usually mistaken for.",
+      "includes": [
+        "portfolio development, portfolio review, artist statement as submission material",
+        "interviewing, job search, career preparation for employment",
+        "gallery, residency, competition and grant SUBMISSION mechanics",
+        "how to curate, how to exhibit, how to publish — the craft of these",
+        "professional licensure, accreditation, industry-standard practice"
+      ],
+      "excludes": [
+        "building an enterprise around one's own work — VENTURE",
+        "reaching people directly with one's own work — AUDIENCE",
+        "SENIOR STUDIO, senior seminar in a medium, capstone, degree project, thesis studio — these are STUDIO. Senior Photography and Senior Sculpture are studio courses, not professional readiness",
+        "studio and technique courses that mention portfolio or industry in passing — Functional Design for High-Performance Eyewear is a design course",
+        "art history and curatorial theory — that is HISTORY unless the course teaches the craft of curating as professional work"
+      ],
+      "lexicon": [
+        "professional practice",
+        "professional practices",
+        "business of art",
+        "business practices",
+        "entrepreneur*",
+        "freelanc*",
+        "self-employ*",
+        "pricing",
+        "negotiat*",
+        "contract",
+        "contracts",
+        "contractual",
+        "copyright",
+        "licens*",
+        "intellectual property",
+        "royalt*",
+        "grant writing",
+        "fundrais*",
+        "commission",
+        "commissions",
+        "client*",
+        "studio management",
+        "career*",
+        "portfolio review",
+        "self-promotion",
+        "marketing your",
+        "art market",
+        "gallery representation",
+        "tax",
+        "taxes",
+        "taxation",
+        "invoice",
+        "budget"
+      ],
+      "thresholds": [
+        0.002,
+        0.006,
+        0.015,
+        0.03
+      ]
+    },
+    "self": {
+      "name": "Creative Self-Development Science",
+      "question": "Does this course teach creative process, creative development, or the person making the work as its subject — how ideas form, how a practice is navigated and sustained, how a creative life is designed?",
+      "includes": [
+        "creativity science, creative cognition, psychology of creativity",
+        "creative process and ideation taught as transferable method",
+        "personal and artistic development, artistic identity and voice",
+        "life design for artists, sustaining a practice, artist wellbeing and burnout",
+        "contemplative, somatic and embodiment practice taught as creative method",
+        "critique taught explicitly as a method"
+      ],
+      "excludes": [
+        "ANY studio, media or technique course where making is the content",
+        "thesis or capstone whose subject is the student's own project — BUT a seminar that explicitly teaches how ideas form or how a practice is navigated DOES count",
+        "courses that merely use the words creative or creativity in describing studio work",
+        "performance and somatic training taught for performance rather than as creative method"
+      ],
+      "lexicon": [
+        "creative process",
+        "creativity",
+        "creative practice",
+        "ideation",
+        "idea generation",
+        "problem finding",
+        "flow state",
+        "deliberate practice",
+        "contemplat*",
+        "meditation",
+        "somatic",
+        "embodiment",
+        "mindful*",
+        "critical feedback",
+        "artistic development",
+        "burnout",
+        "studio practice",
+        "sketchbook",
+        "artistic voice",
+        "artist statement",
+        "artistic identity",
+        "personal vision",
+        "design thinking",
+        "process journal",
+        "creative confidence",
+        "life design",
+        "creative life",
+        "personal development",
+        "self-development",
+        "artist wellbeing",
+        "creative cognition",
+        "psychology of creativity"
+      ],
+      "thresholds": [
+        0.001,
+        0.004,
+        0.01,
+        0.02
+      ]
+    },
+    "audience": {
+      "name": "Audience and Distribution",
+      "question": "Does this course teach connecting your own work to people — marketing, sales, social media, storytelling for reach, self-distribution, building a following? The vehicle does not matter; the subject is reaching an audience directly.",
+      "includes": [
+        "marketing and sales for artists and designers",
+        "social media, online presence, content and platform strategy",
+        "storytelling and narrative deployed to reach an audience",
+        "self-publishing, self-distribution, direct-to-audience channels",
+        "audience development, community and public engagement with one's own work",
+        "curating, exhibiting or publishing WHEN the subject is connecting work to people"
+      ],
+      "excludes": [
+        "HOW TO curate, exhibit or publish as a craft — that is PRACTICE",
+        "art history, survey and museum studies",
+        "rhetoric and composition treating audience as a writing concept",
+        "research methods mentioning published research or documentation of findings",
+        "statistics and science using distribution in its technical sense"
+      ],
+      "lexicon": [
+        "exhibit*",
+        "curat*",
+        "gallery practice",
+        "document*",
+        "artist statement",
+        "writing about art",
+        "artist talk",
+        "presentation of work",
+        "publish*",
+        "self-publish*",
+        "zine",
+        "zines",
+        "audience*",
+        "social media",
+        "platform*",
+        "online presence",
+        "community engagement",
+        "socially engaged",
+        "social practice",
+        "public art",
+        "site-specific",
+        "collaboration with community",
+        "self-distribut*",
+        "distribution deal",
+        "distributing work",
+        "film distribution",
+        "music distribution"
+      ],
+      "thresholds": [
+        0.004,
+        0.012,
+        0.028,
+        0.055
+      ]
+    }
+  },
+  "prefilter": {
+    "note": "Stage one is tuned for RECALL, not precision. Over-matching is fine and expected; stage two removes the false positives. Under-matching is invisible and unrecoverable, so err wide.",
+    "min_description_chars": 0,
+    "search_fields": [
+      "title",
+      "description"
+    ]
+  },
+  "classifier": {
+    "model": "claude-haiku-4-5-20251001",
+    "temperature": 0,
+    "batch_size": 20,
+    "note": "Temperature 0 and a cached result per course-text hash, so a rerun reproduces exactly. Every classification is logged with the model and rubric version.",
+    "instruction": "For each course decide which categories, if any, it belongs to. The default is none: most courses in a university catalog belong to no category, and an empty array is the expected answer.\n\nApply one test per category. Would a student describing this course to a friend name the category's subject as what the course is ABOUT? If the category's subject is instead the medium, the tool, the setting, or one component of a studio course, the answer is no.\n\nJudge what the course teaches, not what words appear in it. A ceramics course that develops the student's creative process is a ceramics course. A painting course that mentions selling work is a painting course. A statistics course using the word distribution is a statistics course. When a course is genuinely borderline, exclude it — a missing true positive costs one course; a false positive is published as evidence.\n\nThe exclusions describe subjects, not course types. Never reject a course because its title contains thesis, seminar, capstone, studio or workshop; reject it because what it teaches is the student's own project, a medium, or a technique. A course named 'Thesis Seminar: Navigating the Creative Process' teaches creative process and counts."
+  },
+  "matching": {
+    "rule": "Each term is compiled with word boundaries. A trailing * means prefix match: 'negotiat*' matches negotiate, negotiating, negotiation.",
+    "why": "v0.1 stripped whitespace off every term before escaping it, so ' ai ' compiled to a bare substring 'ai' and matched painting, detail, available, maintain, chair. 'unity' matched community. 'tax' matched taxonomy. 'contract' matched contraction. On an art catalog the technology axis matched close to everything, which makes the shortlist rate useless as a diagnostic."
+  },
+  "flagged_for_author": {
+    "note": "Not changed in v0.2 — each is an editorial call, not a mechanical repair. Run lexprobe.py and decide from the counts and samples.",
+    "probably_dead_phrases": {
+      "self": [
+        "improvisation method",
+        "critique method",
+        "sustaining a practice",
+        "studio habit",
+        "creative block"
+      ],
+      "venture": [
+        "studio practice business",
+        "marketing your"
+      ],
+      "audience": [
+        "presentation of work",
+        "writing about art",
+        "collaboration with community"
+      ],
+      "why": "No registrar writes these. A dead term cannot lower a score, only fail to raise one — so the Self axis scoring near zero would be manufactured by the lexicon rather than found in the world. That is the index's strongest sentence and it must not be an artifact."
+    },
+    "high_carry_boilerplate": {
+      "venture": [
+        "career*"
+      ],
+      "audience": [
+        "distribution",
+        "audience*",
+        "exhibit*"
+      ],
+      "technology": [
+        "unity"
+      ],
+      "why": "Catalog boilerplate ('prepares students for careers in...', 'satisfies the general education distribution requirement', 'unity of composition'). Stage two rejects them correctly, but if one term carries >40% of an axis's shortlist the axis is measuring that word. Check carry% in lexprobe before spending on stage two."
+    }
+  },
+  "v0_3_evidence": {
+    "self_was_measuring_studio_courses": [
+      "CalArts: Alternative Screenwriting, Animacy in the Moving Image, A Taste of Film",
+      "RISD: ADVANCED KNITTING, COLLABORATIVE CERAMICS, CTC CORE STUDIO 5",
+      "Temple: Printmaking Workshop, Creative Process in Art Therapy"
+    ],
+    "self_true_positives_are_rare_and_that_is_the_finding": [
+      "RISD ARCH 2196 THESIS SEM: NAVIGATING THE CREATIVE PROCESS",
+      "SCAD AI 180 Creative Cognition Lab",
+      "SCAD FOUN 110 Design: Thinking and Process",
+      "Temple DANC 2897 Creative Process in Dance"
+    ],
+    "venture_was_measuring_business_school_and_auditions": [
+      "Temple: Federal Taxes on Income, Federal Taxation, Advertising Sales",
+      "SCAD: The Art of the Audition, Casting Immersion, On-camera Audition Techniques",
+      "CalArts: Audio Plugin Development, Adv. Architectural Lighting"
+    ],
+    "venture_working_as_intended": [
+      "MassArt: Professional Practice x5, The Business of Film/Video, Financial Managerial Accounting for Designers, Business Plan Sustainability"
+    ]
+  },
+  "v0_4_note": {
+    "hypothesis": "Sonnet was not over-rejecting Self; it was executing a badly written exclude literally. Haiku ignored the same exclude, which masked the error.",
+    "test": "Re-run RISD alone against v0.4 on Sonnet. If ARCH 2196 returns as a Self match and the drawing and sketchbook studios stay out, the hypothesis holds and Sonnet is the better instrument precisely because it follows the rubric.",
+    "if_it_holds": "RISD Self = 1. One course teaching creative process as method at one of the strongest art schools in the country is the finding, not a miss."
+  },
+  "structure": {
+    "primary": [
+      "venture",
+      "self"
+    ],
+    "sub_aspects_of_venture": [
+      "technology",
+      "audience"
+    ],
+    "control": [
+      "practice"
+    ],
+    "note": "Technology and audience are sub-aspects of venture, not peers of it: both are capacities a venture needs. So the five axes are NOT orthogonal and MUST NOT be averaged into a composite — doing so double-counts venture. Report five separate percentages. A course may carry more than one axis (sales for artists is venture and audience), so per-school percentages may sum above 100% and that is correct."
+  },
+  "denominator": {
+    "rule": "n_matched / n_art_courses — the school's own art unit, never the whole catalog",
+    "why": "The question is what fraction of an art unit's offerings sit on each axis. Whole-catalog share answers a different question nobody asked. A 400-course art unit at 60% venture beats a 400-course art unit at 30% venture regardless of what else the parent university offers.",
+    "known_limitation": "The art-subject set moves a median 10.6% between classifier models. This is stated, and reduced by improving the subject classifier — not a reason to use a denominator that answers a different question."
+  },
+  "subsets": {
+    "venture.entrepreneurship_explicit": "flag venture matches whose TITLE contains entrepreneur/entrepreneurship, reported as a named subset count alongside the venture percentage"
+  },
+  "axis_exclusivity": {
+    "rule": "VENTURE and PRACTICE are mutually exclusive. A course carries at most one.",
+    "why": "They are a split of one thing — what the student is taught to depend on. Allowing both double-counted roughly 30% of venture matches in v0.5: RISD FD 2582, GRAD 144G, ILLUS 4012; MassArt EDID 230, MPFV 327; Temple ART 4096, ART 4097.",
+    "tiebreak": "If a course teaches both — a professional-practice course with a business module — assign VENTURE only when building one's own enterprise is the course's larger part. Otherwise PRACTICE. When genuinely balanced, choose PRACTICE: it is the more common and less flattering reading, and the index should not overstate venture.",
+    "still_multi_label": "Other pairs may co-occur. Sales for artists is VENTURE and AUDIENCE. Technology and audience remain sub-aspects of venture."
+  },
+  "composition": {
+    "purpose": "A second, separate classification: every course in the art unit gets exactly ONE primary bucket. Exhaustive and mutually exclusive, so the buckets sum to 100% of the art unit. This answers a dean's first question — what is my curriculum actually made of — which the five axes cannot, because they only measure the parts the index cares about and overlap by design. Report composition as a pie; report axes as five percentages alongside it.",
+    "question": "What is this course primarily? Choose exactly one bucket. Judge what the course teaches, not what words appear in it. When a course could sit in two, choose the one a student would name if asked what the class was about.",
+    "buckets": {
+      "studio": "Making in a medium or technique — painting, ceramics, typography, animation, photography, industrial design studio. The core of an art curriculum.",
+      "history_theory": "Art and design history, visual culture, theory, criticism, curatorial and museum studies as scholarship.",
+      "liberal_arts": "Writing, literature, philosophy, science, mathematics, language, social science — non-art coursework offered inside or required by the art unit.",
+      "practice": "Professional readiness: portfolio, interviewing, submission, licensure, internship preparation, the craft of curating or exhibiting as a job.",
+      "venture": "Building an enterprise around one's own work: business formation, revenue, pricing, funding, self-employment, studio as a business.",
+      "technology": "Computational and emerging tools, and named software or hardware toolsets taught for creative work.",
+      "self": "Creative process, creativity science, artistic development, life design for artists, sustaining a practice.",
+      "audience": "Marketing, sales, social media, storytelling for reach, self-distribution, audience development for one's own work.",
+      "capstone": "Thesis, degree project, senior studio, final project, graduate seminar tied to the student's own body of work.",
+      "independent": "Independent study, directed study, special topics with no fixed content, internship placements, administrative registration shells.",
+      "pedagogy": "Art education and teacher preparation — training teachers rather than artists.",
+      "other": "Anything that fits none of the above. If this bucket exceeds ~5% of a school, the taxonomy is wrong and should be revised rather than forced."
+    },
+    "notes": [
+      "CalArts carries 2,603 administrative shells — Independent Study, Internship and Thesis replicated once per department per level — which is 38% of its catalog. The independent bucket makes that visible instead of letting it silently dilute every percentage.",
+      "capstone is separated from studio deliberately. A senior thesis studio is not the same curricular object as a sophomore painting course, and deans reason about them differently.",
+      "The five axis percentages and the composition percentages will not agree exactly. Axes allow overlap and are measured against matched courses; composition is one-per-course and exhaustive. Both are reported, and the difference is stated rather than reconciled."
+    ],
+    "scope": "Runs over EVERY course in the school's art-subject set — no prefilter. The prefilter exists to keep cost down across 500k records; an art unit is a few hundred to a few thousand courses, so classifying all of them removes the prefilter as a source of error entirely for the dean-facing product."
+  }
+}

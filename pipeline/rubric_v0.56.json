@@ -1,0 +1,1015 @@
+{
+  "rubric_version": "0.56",
+  "generated": "2026-09-09",
+  "status": "SELF CRITIQUE BOARD — no prompt change; course signature 32a672745485881f unchanged. Brink's 17 October ruling: critique of student work is not self; critique counts only when its subject is the creative process or critique as a method of sustaining a practice. Self is restated as the science of creativity, the optimization of one's creative process, and the management of one's creative self. This reverses my v0.51 critique-lexicon addition, which had no oracle and produced 0.27 precision inside the family. Board ruled on 99 rows: 26 kept, 73 removed; self 274 to 201. Nine majority overrides, seven toward keeping. The rendered self text and the lexicon are deliberately left alone — the includes line already says what the ruling keeps, and the board is the correction. Joins the industry-role board in the stage-17 release.",
+  "measures": "What a school's catalog offers. Not what a graduate leaves with, and not what is required — see limitations.",
+  "limitations": [
+    "OFFERED, NOT REQUIRED. harvest.py reads course descriptions, not degree requirement sheets, so nothing here can distinguish a required professional-practice course from an elective nobody takes. The Venture axis in particular means much less without it. Either harvest program pages, or state plainly that edition one measures offering.",
+    "Denominator is the whole catalog, not the art catalog. A large public university dilutes: 40 art-business courses among 6,000 total scores lower than 10 among 400. Normalizing by CIP-50-relevant courses rather than all courses is unresolved.",
+    "Thresholds below are placeholders. They must be set from the observed distribution once enough schools are scored, and the rule used must be published."
+  ],
+  "axes": {
+    "technology": {
+      "name": "Art Technology Adoption",
+      "question": "Does this course teach making with computational or emerging tools — AI, code, generative systems, immersive media, digital fabrication — or teach a specific software or hardware toolset for creative work?",
+      "includes": [
+        "AI readiness, generative tools, machine learning as material",
+        "creative coding, computational and algorithmic making",
+        "immersive, XR, game engines, virtual production",
+        "digital fabrication, CNC, 3D printing, physical computing",
+        "named software or hardware toolsets taught for creative work"
+      ],
+      "excludes": [
+        "computer science, data science or engineering outside an art or design subject",
+        "art history or theory that discusses technology without making",
+        "technical trade production where the tool is the trade — audio plugin development, architectural lighting"
+      ],
+      "lexicon": [
+        "2d animation",
+        "3-d",
+        "3d",
+        "3d animation",
+        "3d model*",
+        "3d print*",
+        "ableton",
+        "adobe",
+        "after effects",
+        "ai",
+        "algorithm*",
+        "animat*",
+        "arduino",
+        "art and technology",
+        "artificial intelligence",
+        "augmented reality",
+        "avid",
+        "blender",
+        "cad",
+        "character rig*",
+        "cinema 4d",
+        "cnc",
+        "coding",
+        "color grading",
+        "compositing",
+        "computation*",
+        "computer",
+        "creative coding",
+        "css",
+        "data visuali*",
+        "data viz",
+        "davinci",
+        "digital",
+        "digital fabrication",
+        "digital illustration",
+        "digital painting",
+        "digital sculpt*",
+        "electronic art*",
+        "emerging media",
+        "extended reality",
+        "figma",
+        "game art",
+        "game design",
+        "game development",
+        "game engine",
+        "generative",
+        "houdini",
+        "html",
+        "illustrator",
+        "immersive",
+        "indesign",
+        "interaction design",
+        "interactive",
+        "interactive installation",
+        "interactivity",
+        "interface design",
+        "javascript",
+        "laser cut*",
+        "level design",
+        "lightroom",
+        "machine learning",
+        "max msp",
+        "max/msp",
+        "maya",
+        "mixed reality",
+        "mobile app*",
+        "modeling",
+        "modelling",
+        "modelmaking",
+        "motion capture",
+        "motion design",
+        "motion graphic*",
+        "motion typography",
+        "new media",
+        "nuke",
+        "p5.js",
+        "parametric",
+        "photoshop",
+        "physical computing",
+        "premiere",
+        "pro tools",
+        "procedural",
+        "processing",
+        "programming",
+        "projection mapping",
+        "real-time",
+        "realtime",
+        "rendering",
+        "rhino",
+        "rigging",
+        "shader*",
+        "smart environment*",
+        "software",
+        "sound design",
+        "substance painter",
+        "tangible interface*",
+        "texturing",
+        "touchdesigner",
+        "ui",
+        "unity 3d",
+        "unity engine",
+        "unreal",
+        "user experience",
+        "ux",
+        "vfx",
+        "virtual environment*",
+        "virtual production",
+        "virtual reality",
+        "virtual world*",
+        "visual effects",
+        "web design",
+        "web development",
+        "web languages",
+        "xr",
+        "zbrush"
+      ],
+      "thresholds": [
+        0.005,
+        0.015,
+        0.035,
+        0.07
+      ]
+    },
+    "venture": {
+      "name": "Art Venture and Enterprise",
+      "question": "Does this course teach building an enterprise around your own creative work — business formation, revenue, pricing, funding, self-employment, running a studio as a business? The test is whether the student is taught to build something of their own, not to operate inside someone else's apparatus.",
+      "includes": [
+        "business formation, business models, startup and studio-as-business",
+        "pricing, revenue, contracts and negotiation for one's own work",
+        "self-employment, freelancing as an enterprise, financial management for artists",
+        "grant writing and fundraising to finance one's own practice",
+        "intellectual property, licensing and royalties as revenue"
+      ],
+      "excludes": [
+        "portfolio, interviewing, resume, submission preparation — PRACTICE",
+        "gallery submission, residency application, competition entry — PRACTICE",
+        "professional licensure, accreditation, internship placement — PRACTICE",
+        "SENIOR STUDIO, capstone, degree project, thesis studio — these are STUDIO, even when the description mentions professional context",
+        "medium and technique courses that mention industry or clients in passing — IMAGE DESIGN, ILLUSTRATING FOR SURFACE & PATTERN DESIGN are illustration courses",
+        "entrepreneurship taught outside art and design — The Entrepreneurial Bioengineer",
+        "accounting, finance or management taught for business students",
+        "arts administration training administrators rather than artists"
+      ],
+      "lexicon": [
+        "art business",
+        "art market",
+        "budget",
+        "business for",
+        "business of",
+        "business of art",
+        "business practices",
+        "career*",
+        "client*",
+        "commercial galler*",
+        "commission",
+        "commissions",
+        "contract",
+        "contracts",
+        "contractual",
+        "copyright",
+        "creative industry",
+        "design business",
+        "entrepreneur*",
+        "freelanc*",
+        "fundrais*",
+        "gallery representation",
+        "grant writing",
+        "intellectual property",
+        "invoice",
+        "licens*",
+        "making a living",
+        "marketing your",
+        "negotiat*",
+        "philanthrop*",
+        "portfolio review",
+        "pricing",
+        "professional practice",
+        "professional practices",
+        "royalt*",
+        "running a",
+        "self-employ*",
+        "self-management",
+        "self-promotion",
+        "start-up",
+        "startup",
+        "studio management",
+        "sustaining a",
+        "tax",
+        "taxation",
+        "taxes",
+        "working artist"
+      ],
+      "thresholds": [
+        0.002,
+        0.006,
+        0.015,
+        0.03
+      ]
+    },
+    "practice": {
+      "name": "Professional Practice and Readiness",
+      "question": "Does this course teach operating inside an existing professional apparatus — portfolio, interviewing, submission, licensure, and the craft of curating, exhibiting or publishing? This is the control axis: it is what nearly every program already teaches, and it is what venture is usually mistaken for.",
+      "includes": [
+        "portfolio development, portfolio review, artist statement as submission material",
+        "interviewing, job search, career preparation for employment",
+        "gallery, residency, competition and grant SUBMISSION mechanics",
+        "how to curate, how to exhibit, how to publish — the craft of these",
+        "professional licensure, accreditation, industry-standard practice"
+      ],
+      "excludes": [
+        "building an enterprise around one's own work — VENTURE",
+        "reaching people directly with one's own work — AUDIENCE",
+        "SENIOR STUDIO, senior seminar in a medium, capstone, degree project, thesis studio — these are STUDIO. Senior Photography and Senior Sculpture are studio courses, not professional readiness",
+        "studio and technique courses that mention portfolio or industry in passing — Functional Design for High-Performance Eyewear is a design course",
+        "art history and curatorial theory — that is HISTORY unless the course teaches the craft of curating as professional work"
+      ],
+      "lexicon": [
+        "art market",
+        "budget",
+        "business of art",
+        "business practices",
+        "career*",
+        "client*",
+        "co-op",
+        "commission",
+        "commissions",
+        "contract",
+        "contracts",
+        "contractual",
+        "cooperative education",
+        "copyright",
+        "cover letter",
+        "entrepreneur*",
+        "externship*",
+        "field experience",
+        "field work",
+        "fieldwork",
+        "freelanc*",
+        "fundrais*",
+        "gallery representation",
+        "grant writing",
+        "intellectual property",
+        "intern",
+        "internship*",
+        "interview*",
+        "invoice",
+        "job search",
+        "licens*",
+        "marketing your",
+        "negotiat*",
+        "placement",
+        "portfolio",
+        "portfolio development",
+        "portfolio preparation",
+        "portfolio review",
+        "practica",
+        "practicum",
+        "practicums",
+        "pricing",
+        "professional experience",
+        "professional practice",
+        "professional practices",
+        "resume",
+        "royalt*",
+        "résumé",
+        "self-employ*",
+        "self-promotion",
+        "studio management",
+        "tax",
+        "taxation",
+        "taxes",
+        "work placement"
+      ],
+      "thresholds": [
+        0.002,
+        0.006,
+        0.015,
+        0.03
+      ]
+    },
+    "self": {
+      "name": "Creative Self-Development Science",
+      "question": "Does this course teach creative process, creative development, or the person making the work as its subject — how ideas form, how a practice is navigated and sustained, how a creative life is designed?",
+      "includes": [
+        "creativity science, creative cognition, psychology of creativity",
+        "creative process and ideation taught as transferable method",
+        "personal and artistic development, artistic identity and voice",
+        "life design for artists, sustaining a practice, artist wellbeing and burnout",
+        "contemplative, somatic and embodiment practice taught as creative method",
+        "critique taught explicitly as a method"
+      ],
+      "excludes": [
+        "ANY studio, media or technique course where making is the content",
+        "A studio course does not become a Self course by saying it develops expression, confidence, creativity or personal voice. Those phrases describe an OUTCOME of making and appear in studio boilerplate across the corpus. CalArts AART 220 'Writing' declares itself part of the Studio Series, counts toward the studio requirement, and uses language as its medium — it is a studio course. If the description says studio, counts toward a studio requirement, or names a medium the student will work in, it is excluded however the outcomes are worded.",
+        "thesis or capstone whose subject is the student's own project — BUT a seminar that explicitly teaches how ideas form or how a practice is navigated DOES count",
+        "courses that merely use the words creative or creativity in describing studio work",
+        "performance and somatic training taught for performance rather than as creative method"
+      ],
+      "lexicon": [
+        "artist statement",
+        "artist wellbeing",
+        "artistic development",
+        "artistic identity",
+        "artistic voice",
+        "burnout",
+        "contemplat*",
+        "creative cognition",
+        "creative confidence",
+        "creative life",
+        "creative practice",
+        "creative process",
+        "creativity",
+        "crit",
+        "critical discourse",
+        "critical feedback",
+        "critique",
+        "critique method*",
+        "critiques",
+        "crits",
+        "deliberate practice",
+        "design thinking",
+        "embodiment",
+        "feedback method*",
+        "flow state",
+        "group critique",
+        "idea generation",
+        "ideation",
+        "life design",
+        "meditation",
+        "mindful*",
+        "modes of critique",
+        "open critique",
+        "peer critique",
+        "personal development",
+        "personal vision",
+        "problem finding",
+        "process journal",
+        "psychology of creativity",
+        "reflective practice",
+        "self-assessment",
+        "self-development",
+        "sketchbook",
+        "somatic",
+        "studio practice",
+        "studio visit*"
+      ],
+      "thresholds": [
+        0.001,
+        0.004,
+        0.01,
+        0.02
+      ]
+    },
+    "audience": {
+      "name": "Audience and Distribution",
+      "question": "Does this course teach connecting your own work to people — marketing, sales, social media, storytelling for reach, self-distribution, building a following? The vehicle does not matter; the subject is reaching an audience directly.",
+      "includes": [
+        "marketing and sales for artists and designers",
+        "social media, online presence, content and platform strategy",
+        "storytelling and narrative deployed to reach an audience",
+        "self-publishing, self-distribution, direct-to-audience channels",
+        "audience development, community and public engagement with one's own work",
+        "curating, exhibiting or publishing WHEN the subject is connecting work to people"
+      ],
+      "excludes": [
+        "HOW TO curate, exhibit or publish as a craft — that is PRACTICE",
+        "art history, survey and museum studies",
+        "rhetoric and composition treating audience as a writing concept",
+        "research methods mentioning published research or documentation of findings",
+        "statistics and science using distribution in its technical sense"
+      ],
+      "lexicon": [
+        "exhibit*",
+        "curat*",
+        "gallery practice",
+        "document*",
+        "artist statement",
+        "writing about art",
+        "artist talk",
+        "presentation of work",
+        "publish*",
+        "self-publish*",
+        "zine",
+        "zines",
+        "audience*",
+        "social media",
+        "platform*",
+        "online presence",
+        "community engagement",
+        "socially engaged",
+        "social practice",
+        "public art",
+        "site-specific",
+        "collaboration with community",
+        "self-distribut*",
+        "distribution deal",
+        "distributing work",
+        "film distribution",
+        "music distribution"
+      ],
+      "thresholds": [
+        0.004,
+        0.012,
+        0.028,
+        0.055
+      ]
+    }
+  },
+  "prefilter": {
+    "note": "Stage one is tuned for RECALL, not precision. Over-matching is fine and expected; stage two removes the false positives. Under-matching is invisible and unrecoverable, so err wide.",
+    "min_description_chars": 0,
+    "search_fields": [
+      "title",
+      "description"
+    ]
+  },
+  "classifier": {
+    "model": "claude-sonnet-4-6",
+    "temperature": 0,
+    "batch_size": 20,
+    "note": "Temperature 0 and a cached result per course-text hash, so a rerun reproduces exactly. Every classification is logged with the model and rubric version.",
+    "instruction": "For each course decide which categories, if any, it belongs to. The default is none: most courses in a university catalog belong to no category, and an empty array is the expected answer.\n\nApply one test per category. Would a student describing this course to a friend name the category's subject as what the course is ABOUT? If the category's subject is instead the medium, the tool, the setting, or one component of a studio course, the answer is no.\n\nJudge what the course teaches, not what words appear in it. A ceramics course that develops the student's creative process is a ceramics course. A painting course that mentions selling work is a painting course. A statistics course using the word distribution is a statistics course. When a course is genuinely borderline, exclude it — a missing true positive costs one course; a false positive is published as evidence.\n\nThe exclusions describe subjects, not course types. Never reject a course because its title contains thesis, seminar, capstone, studio or workshop; reject it because what it teaches is the student's own project, a medium, or a technique. A course named 'Thesis Seminar: Navigating the Creative Process' teaches creative process and counts.\n\nTWO CATEGORIES ARE MUTUALLY EXCLUSIVE. Never assign both venture and practice to the same course. They are one distinction, not two categories: what is the student taught to depend on? Venture is building something of their own — business formation, revenue, pricing, funding, self-employment, running a studio as an enterprise. Practice is operating inside an apparatus someone else built — portfolio, interviewing, submission, licensure, internship, the craft of curating or exhibiting as a job.\n\nWhen a course teaches both, choose the larger part. When it is genuinely balanced, choose practice. A course called 'Professional Practice' that includes a unit on pricing is practice. 'What Next? Making a Living as an Artist' is practice unless the course is predominantly about building a business. Choosing practice on a tie is deliberate: it is the more common and less flattering reading, and this index must not overstate how much enterprise training exists.",
+    "model_note": "The model is part of the instrument. Sonnet 4.6 and Haiku 4.5 read this rubric differently enough to change every axis: on five schools under an identical rubric file, Haiku returned 1.43x more matches overall, 7.8x more Self at RISD, and put studio courses back into Self at CalArts — the failure v0.3 was written to fix. Every adjudication in this project's history ran on Sonnet. Changing the model is a version bump, never a flag.\n\nclaude-sonnet-4-6 is already the most specific identifier: from the 4.6 generation onward model IDs are dateless AND pinned to a single fixed snapshot, so there is no dated form to prefer. Record it verbatim in the methodology."
+  },
+  "matching": {
+    "rule": "Each term is compiled with word boundaries. A trailing * means prefix match: 'negotiat*' matches negotiate, negotiating, negotiation.",
+    "why": "v0.1 stripped whitespace off every term before escaping it, so ' ai ' compiled to a bare substring 'ai' and matched painting, detail, available, maintain, chair. 'unity' matched community. 'tax' matched taxonomy. 'contract' matched contraction. On an art catalog the technology axis matched close to everything, which makes the shortlist rate useless as a diagnostic."
+  },
+  "flagged_for_author": {
+    "note": "Not changed in v0.2 — each is an editorial call, not a mechanical repair. Run lexprobe.py and decide from the counts and samples.",
+    "probably_dead_phrases": {
+      "self": [
+        "improvisation method",
+        "critique method",
+        "sustaining a practice",
+        "studio habit",
+        "creative block"
+      ],
+      "venture": [
+        "studio practice business",
+        "marketing your"
+      ],
+      "audience": [
+        "presentation of work",
+        "writing about art",
+        "collaboration with community"
+      ],
+      "why": "No registrar writes these. A dead term cannot lower a score, only fail to raise one — so the Self axis scoring near zero would be manufactured by the lexicon rather than found in the world. That is the index's strongest sentence and it must not be an artifact."
+    },
+    "high_carry_boilerplate": {
+      "venture": [
+        "career*"
+      ],
+      "audience": [
+        "distribution",
+        "audience*",
+        "exhibit*"
+      ],
+      "technology": [
+        "unity"
+      ],
+      "why": "Catalog boilerplate ('prepares students for careers in...', 'satisfies the general education distribution requirement', 'unity of composition'). Stage two rejects them correctly, but if one term carries >40% of an axis's shortlist the axis is measuring that word. Check carry% in lexprobe before spending on stage two."
+    }
+  },
+  "v0_3_evidence": {
+    "self_was_measuring_studio_courses": [
+      "CalArts: Alternative Screenwriting, Animacy in the Moving Image, A Taste of Film",
+      "RISD: ADVANCED KNITTING, COLLABORATIVE CERAMICS, CTC CORE STUDIO 5",
+      "Temple: Printmaking Workshop, Creative Process in Art Therapy"
+    ],
+    "self_true_positives_are_rare_and_that_is_the_finding": [
+      "RISD ARCH 2196 THESIS SEM: NAVIGATING THE CREATIVE PROCESS",
+      "SCAD AI 180 Creative Cognition Lab",
+      "SCAD FOUN 110 Design: Thinking and Process",
+      "Temple DANC 2897 Creative Process in Dance"
+    ],
+    "venture_was_measuring_business_school_and_auditions": [
+      "Temple: Federal Taxes on Income, Federal Taxation, Advertising Sales",
+      "SCAD: The Art of the Audition, Casting Immersion, On-camera Audition Techniques",
+      "CalArts: Audio Plugin Development, Adv. Architectural Lighting"
+    ],
+    "venture_working_as_intended": [
+      "MassArt: Professional Practice x5, The Business of Film/Video, Financial Managerial Accounting for Designers, Business Plan Sustainability"
+    ]
+  },
+  "v0_4_note": {
+    "hypothesis": "Sonnet was not over-rejecting Self; it was executing a badly written exclude literally. Haiku ignored the same exclude, which masked the error.",
+    "test": "Re-run RISD alone against v0.4 on Sonnet. If ARCH 2196 returns as a Self match and the drawing and sketchbook studios stay out, the hypothesis holds and Sonnet is the better instrument precisely because it follows the rubric.",
+    "if_it_holds": "RISD Self = 1. One course teaching creative process as method at one of the strongest art schools in the country is the finding, not a miss."
+  },
+  "structure": {
+    "primary": [
+      "venture",
+      "self"
+    ],
+    "sub_aspects_of_venture": [
+      "technology",
+      "audience"
+    ],
+    "control": [
+      "practice"
+    ],
+    "note": "Technology and audience are sub-aspects of venture, not peers of it: both are capacities a venture needs. So the five axes are NOT orthogonal and MUST NOT be averaged into a composite — doing so double-counts venture. Report five separate percentages. A course may carry more than one axis (sales for artists is venture and audience), so per-school percentages may sum above 100% and that is correct."
+  },
+  "denominator": {
+    "rule": "n_matched / n_art_courses — the school's own art unit, never the whole catalog",
+    "why": "The question is what fraction of an art unit's offerings sit on each axis. Whole-catalog share answers a different question nobody asked. A 400-course art unit at 60% venture beats a 400-course art unit at 30% venture regardless of what else the parent university offers.",
+    "known_limitation": "The art-subject set moves a median 10.6% between classifier models. This is stated, and reduced by improving the subject classifier — not a reason to use a denominator that answers a different question."
+  },
+  "subsets": {
+    "venture.entrepreneurship_explicit": "flag venture matches whose TITLE contains entrepreneur/entrepreneurship, reported as a named subset count alongside the venture percentage"
+  },
+  "axis_exclusivity": {
+    "rule": "VENTURE and PRACTICE are mutually exclusive. A course carries at most one.",
+    "why": "They are a split of one thing — what the student is taught to depend on. Allowing both double-counted roughly 30% of venture matches in v0.5: RISD FD 2582, GRAD 144G, ILLUS 4012; MassArt EDID 230, MPFV 327; Temple ART 4096, ART 4097.",
+    "tiebreak": "If a course teaches both — a professional-practice course with a business module — assign VENTURE only when building one's own enterprise is the course's larger part. Otherwise PRACTICE. When genuinely balanced, choose PRACTICE: it is the more common and less flattering reading, and the index should not overstate venture.",
+    "still_multi_label": "Other pairs may co-occur. Sales for artists is VENTURE and AUDIENCE. Technology and audience remain sub-aspects of venture.",
+    "enforcement": "The rule now lives in classifier.instruction, which build_prompt actually reads. In v0.6 it lived only in this block, which nothing consumes — the model never saw it, and 2-6 courses per school came back with both. Belt and braces: score.py should ALSO drop venture whenever practice is present on the same course, after classification. Deterministic, cannot drift, and it makes the tiebreak a property of the code rather than a hope about the model."
+  },
+  "composition": {
+    "purpose": "A second, separate classification: every course in the art unit gets exactly ONE primary bucket. Exhaustive and mutually exclusive, so the buckets sum to 100% of the art unit. This answers a dean's first question — what is my curriculum actually made of — which the five axes cannot, because they only measure the parts the index cares about and overlap by design. Report composition as a pie; report axes as five percentages alongside it.",
+    "question": "What is this course primarily? Choose exactly one bucket. Judge what the course teaches, not what words appear in it. When a course could sit in two, choose the one a student would name if asked what the class was about.",
+    "buckets": {
+      "studio": "Making in a medium or technique — painting, ceramics, typography, animation, photography, industrial design studio. The core of an art curriculum.",
+      "history_theory": "Art and design history, visual culture, theory, criticism, curatorial and museum studies as scholarship.",
+      "liberal_arts": "Writing, literature, philosophy, science, mathematics, language, social science — non-art coursework offered inside or required by the art unit.",
+      "practice": "Professional readiness: portfolio, interviewing, submission, licensure, internship preparation, the craft of curating or exhibiting as a job.",
+      "venture": "Building an enterprise around one's own work: business formation, revenue, pricing, funding, self-employment, studio as a business.",
+      "technology": "Computational and emerging tools, and named software or hardware toolsets taught for creative work.",
+      "self": "Creative process, creativity science, artistic development, life design for artists, sustaining a practice.",
+      "audience": "Marketing, sales, social media, storytelling for reach, self-distribution, audience development for one's own work.",
+      "capstone": "Thesis, degree project, senior studio, final project, graduate seminar tied to the student's own body of work.",
+      "independent": "Independent study, directed study, special topics with no fixed content, internship placements, administrative registration shells.",
+      "pedagogy": "Art education and teacher preparation — training teachers rather than artists.",
+      "other": "Anything that fits none of the above. If this bucket exceeds ~5% of a school, the taxonomy is wrong and should be revised rather than forced."
+    },
+    "notes": [
+      "CalArts carries 2,603 administrative shells — Independent Study, Internship and Thesis replicated once per department per level — which is 38% of its catalog. The independent bucket makes that visible instead of letting it silently dilute every percentage.",
+      "capstone is separated from studio deliberately. A senior thesis studio is not the same curricular object as a sophomore painting course, and deans reason about them differently.",
+      "The five axis percentages and the composition percentages will not agree exactly. Axes allow overlap and are measured against matched courses; composition is one-per-course and exhaustive. Both are reported, and the difference is stated rather than reconciled."
+    ],
+    "scope": "Runs over EVERY course in the school's art-subject set — no prefilter. The prefilter exists to keep cost down across 500k records; an art unit is a few hundred to a few thousand courses, so classifying all of them removes the prefilter as a source of error entirely for the dean-facing product.",
+    "pedagogy_after_the_exclusion": "The pedagogy bucket already exists and is not missing — 507 courses, 0.97% of the corpus. But excluding art-education PREFIXES from the art unit changes what it counts, and the methodology must say so: pedagogy now means ART EDUCATION TAUGHT INSIDE AN ART DEPARTMENT, not all art education at that institution. Temple's ARTE sequence is in; Florida State's ARE prefix is not. That is the right denominator — the art unit is what art students are offered — but a reader comparing our pedagogy share to a school's art-education enrolment would otherwise be comparing two different things."
+  },
+  "subject_scope": {
+    "in_scope": "CIP 50.01 visual and performing arts general, 50.02 crafts, 50.04 design and applied arts (including 50.0402 commercial and advertising art), 50.06 film/video/photographic arts, 50.07 fine and studio arts, 50.13 community, environmental and socially-engaged art — the same selection that built the roster. Every other CIP 50 family, including 50.05 drama and theatre and 50.10 arts management, is out.",
+    "excluded_families": [
+      "performing arts: music, theatre, dance — including technique, partnering, audition and repertory prefixes",
+      "building and industrial trades (CIP 46, 47, 48) — carpentry, electrical, HVAC, plumbing, welding",
+      "agriculture and natural resources (01, 03), including horticulture",
+      "life sciences (26)",
+      "communication and journalism (CIP 09) — advertising as communication (09.0903), public relations, media studies, journalism",
+      "NOTE, and this is the case the test exists for: advertising DESIGN is CIP 50.0402 Commercial and Advertising Art, which is IN SCOPE. SCAD's ADVE — 'Typography for Advertising Designers', 'Art Direction and Typography Essentials', 'Advertising Studio I: Creative Strategies' — is a design department and stays in. SMU's ADV, Virginia Tech's ADV and Tennessee's ADVT — 'Marketing Principles of Advertising', 'Account Planning and Media Buying', 'Advertising Media Strategy' — are communication departments and stay out. Decide by what the courses teach. Never by the prefix name.",
+      "family and consumer sciences (19)",
+      "education and teacher preparation, except where the courses are studio art courses",
+      "ARCHITECTURE, LANDSCAPE ARCHITECTURE, URBAN AND REGIONAL PLANNING, HISTORIC PRESERVATION — programmes that design BUILDINGS, SITES, LANDSCAPES AND URBAN FORM FOR CONSTRUCTION. Judge by what the prefix's courses design, never by the word design.\n\nTHIS IS NOT AN EXCLUSION OF DESIGN. Graphic, communication, visual, industrial, product, interior, interaction, user-experience, service, game, fashion and textile design are CIP 50.04 and are IN. So are design studies, design management and design research. If a prefix teaches designing OBJECTS, IMAGES, INTERFACES, GARMENTS OR EXPERIENCES rather than buildings and sites, it is IN — Advanced Design Studies, UX Research, Design Management and Preservation Design read as design and belong to the art unit.\n\nThe test in one line: does the prefix train people to put up structures, or to make things?"
+    ],
+    "protected": "These stay IN even though a neighbouring family is excluded, because they are CIP 50: communication design, graphic design and visual communication (50.04); scientific, technical and medical illustration (50.04); industrial, interior and fashion design (50.04); film, video and photography (50.06). The test is what the prefix's courses teach, not what the prefix is named. A prefix whose courses are design or image-making is in; a prefix whose courses are journalism, public relations, advertising management or media theory is out, even if it sits administratively in a design school.",
+    "excluded_delivery": "Continuing education, extension, pre-college, summer intensive and non-credit prefixes are excluded whatever their subject. The index measures what a degree programme teaches its degree students. CalArts XYTH 805 'Discover Studio Art - 1 Week' entered Self through this gap. Report the count excluded per school so the decision is visible and reversible.",
+    "not_subjects": "Campus, location and administrative codes are not subject codes and are excluded by definition — the taxonomy classifies disciplines, and a location cannot be art or not-art. Temple's TUJ (Japan campus) is excluded on this ground rather than on any rule about where a student can enrol. TYLE (Tyler School of Art) stays in; it names a discipline unit.",
+    "positive_rule": "Include a prefix only when most of its sample titles are art and design courses.",
+    "sampling": "A prefix is judged from a sample of its course titles. Sample randomly, not the first N, and use enough titles that a large prefix is not decided on a thin slice. Emerson's VM — 150 courses, its visual and media arts department, CIP 50.06 work — was excluded entirely on five sampled titles that all happened to be media-studies courses. Record the sample size on the record so a reader knows what the judgement rested on.",
+    "scope_change_implementation": "A scope change must never be made by editing the subject prompt. Editing it re-keys every prefix in the corpus and re-rolls every verdict — the Loyola Marymount instability at corpus scale, on the eve of publication. Ask a narrow follow-up question of prefixes currently judged 'art' only, cached per prefix, so no existing verdict can move."
+  },
+  "publication": {
+    "ranked_axes": [
+      "technology",
+      "practice"
+    ],
+    "census_axes": [
+      "venture",
+      "self",
+      "audience"
+    ],
+    "why": "TECHNOLOGY AND PRACTICE RANK. VENTURE, SELF AND AUDIENCE ARE CENSUSES — named courses with source URLs and a count per school, no rank.\n\nThis reverses v0.28, which made all five rank on Brink's instruction, and the reason is evidence that did not exist then: measured against a 158-course oracle, the venture classifier is 16% wrong under the best-tested wording and 11% of the population is undecidable by the person who knows the corpus best. A ranking asserts an order between schools; a census asserts that these named courses exist and these named schools have none. The second claim survives a 16% error rate with every course listed and checkable. The first does not.\n\nSelf and audience were already censuses on their own numbers — 10 and 14 schools clearing the three-course floor out of 144. Venture clears 23, but clearing a floor is not the same as being measurable to the precision a rank implies.\n\nState the census population on every surface: how many schools have three or more, how many have none, and the named courses behind both.",
+    "minimum_count_to_rank": 3,
+    "minimum_count_rule": "A school takes a position on an axis only when it carries at least three matched courses there. Below three it is listed with its count, in grey, with no rank — and it is NOT ranked among the schools that do. One course in a 94-course art unit is 1.06% and would have placed fourth in the country; that is a denominator artefact, not a finding.\n\nTHIS RULE ALREADY DECIDES THE TWO CASES THE MAKER RULE RAISED, and neither should ever have produced a rank. Western Carolina gains two venture courses in a 152-course art unit: two is below three, so it takes no venture position and the reported move to 6th does not exist. Oklahoma State loses its single venture course: one is below three, so its reported fall from 37th to 97th does not exist either. If a ranking produced those numbers, the floor is not being applied where ranks are computed — check that before anything else, because every sparse-axis rank in the index has the same exposure.",
+    "always_show_count": "Every published percentage carries its numerator and denominator — '5 of 182 courses (2.75%)' — on every axis, in every surface, including any sortable table. The count is what makes a share interpretable and it is the first thing a dean checks.",
+    "denominator_disclosure": "Both denominators are computed and the ranking uses the art unit. Publish these numbers, measured on the current corpus, rather than a correlation alone.\n\nSpearman between whole-catalogue and art-unit rank: technology +0.734, practice +0.475, venture +0.447, self +0.436, audience +0.396. Mean +0.498.\n\nBOTH DENOMINATORS CARRY ARTEFACTS AND THEY POINT OPPOSITE WAYS. Whole-catalogue inflates art colleges, whose catalogues are ~74% art against a university's ~6%. The art unit amplifies single courses at small units. Neither is neutral, and the two named movers show the direction: George Mason, 5% art share, moves 93.6 to 36.2; FIT, 56% art share, moves 8.6 to 54.2. Low-art-share schools rise under the art unit and high-art-share schools fall, which is the exact inverse of the whole-catalogue bias.\n\nTHE MEAN HAS FALLEN AS THE CORPUS GREW — +0.611 at n=108, +0.517 at n=132, +0.498 now. The denominator has become MORE load-bearing, not less, as the art unit got cleaner. Venture sits at +0.447: roughly half the rank order on the axis carrying the central claim is a consequence of how the art unit is defined.\n\nSO: lead with count and share, which are a school's own numbers over its own courses and move only when its own catalogue does. Treat rank as derived and dated — true as of a stated corpus, moving when anyone's denominator moves, not only that school's. This is the reason the index prints a count beside every percentage, and the methodology should say so rather than leave a reader to infer it.",
+    "census_claims": [
+      "In 61 of 123 American art and design units we could not identify a single course in building a creative enterprise. At 58 of those, entrepreneurship is taught elsewhere on campus.",
+      "Every one of the 123 teaches professional practice.",
+      "Eighteen of 123 units offer three or more courses in building a creative enterprise."
+    ],
+    "tier_and_reporting": "The RANKED tier stays as the roster defines it: institutions granting 50 or more in-scope bachelor's and master's degrees a year. That rule is mechanical, published and reproducible by anyone with IPEDS, and it must not acquire an exception keyed to another publication's editorial judgement — a US News carve-out would make our roster partly a derivative of theirs and partly unreproducible. Any in-scope programme that has been harvested is REPORTED with a full scorecard whatever its size, carrying the stated reason 'below the 50-degree ranking tier'. Which programmes get collected first is an editorial priority and may follow visibility; which programmes get ranked is a rule. Keeping those separate is what lets the index say 'we read Stanford's catalog; here is what it teaches' without importing anyone else's ranking into our own.",
+    "duplicate_catalogs": "Two institutions publishing a byte-identical catalog are one catalog and must be reported once, under the name of the institution that publishes it, with the relationship stated. Bloomfield College of Montclair State and Montclair State share 5,479 identical courses; report as Montclair State, note the merger, and sum their in-scope degrees for the tier test. Counting both inflates the corpus with a school that was never independently measured.",
+    "subject_set_stability": "A school's art-subject set must not move when its course list grows for unrelated reasons. Loyola Marymount's art unit went 268 to 319 on one added course, because re-keying re-ran the whole-school verdict and it admitted an extra department. For a published index that is a school's number changing between editions with no curricular cause, which is the one thing a provost can prove is wrong. Judge and cache each prefix independently, so adding a course can only affect the prefix it belongs to.",
+    "debut_convention": "The maker rule can move a school's count across the three-course threshold, and when it does the school appears on an axis where it had no position. That is a debut, not a rise, and the changelog must say so: the prefix admitted, its n, its three ratios, and the count that crossed the floor. A school appearing at 6th looks like a finding and is a population change.",
+    "ranked_population": "Every axis publishes its ELIGIBLE POPULATION beside every rank, always: 'NC State, 1st of 23 ranked on venture'. The populations differ enormously — technology 114 of 144, practice 121, venture 23, audience 14, self 10 — and a rank without its population is the single most misreadable number the index produces.\n\nSELF STAYS RANKED, at ten. Ranking ten schools out of 144 is defensible only if the ten are named as ten, and then it is not a league table at all — it is the finding, printed as an ordering. CalArts at 23 courses, SVA at 11, USC at 5 are real differences between real counts. What must never appear is a self rank that implies the other 134 schools are ordered below the ten: they are not ranked, most are at zero, and zero is not a position. The population line for self is the headline for that axis, not a caveat under it.",
+    "withheld_counts": "Verdicts withheld for want of a published description are counted and published, and the ART-UNIT figure is the one on the scorecard, with the whole-catalogue figure beside it — the same convention as n_collapsed and the raw counts already on the card.\n\nThe card's job is to explain that school's published numbers, and those use the art-unit denominator. A whole-shortlist count includes courses that were never in the numerator, so publishing it alone would overstate the effect on the school's own score. Montclair's 42 is a corpus number; what a Montclair dean needs is how many of their ART-UNIT courses the index could not read.",
+    "venture_is_a_census": "VENTURE IS REPORTED AS A CENSUS — named courses with source URLs and a count per school — and carries NO RANK. Self and audience already work this way; venture joins them.\n\nTHIS IS NOT THE EDIT FAILING. It is a measurement limit, and the evidence is that the person who knows this corpus best marked 17 of 158 courses as landing either way — 11% that no defensible instruction has to resolve. 'The Business of X' is three different courses: X as an industry (Business of Fashion, of Animation) describes how a sector operates; X as a career (Business Practices for Interior Designers) prepares someone to be hired; X as the student's own medium (The Business of Jewelry) teaches them to run their shop. Fashion is both a medium and an industry and the title cannot tell you which. Nineteen of twenty-three remaining misses have that shape.\n\nA 16% error rate is fatal to a ranking and survivable in a census where every course is listed with its URL and a reader can check each one. Seven wordings were tested at $22.94; each fixed the last failure and reintroduced an earlier one. That pattern is what a resolution limit looks like from the inside, and the honest response is to change what the axis claims rather than to keep tuning past it.\n\nPUBLISH THE 17 AS A NAMED DISPUTED SET, with both readings and the source URL for each. A census that says 'these seventeen could be read either way, here they are' is stronger than one that hides them inside a number, and it is the sentence no competing index can write.",
+    "practice_now_carries_the_claim": "With venture a census, PRACTICE IS THE RANKED AXIS THE CENTRAL FINDING RESTS ON — practice outruns venture roughly six to one. The unresolved +23% practice movement from the employment clause therefore matters more than when it was raised, not less, and it must be settled before the corpus run rather than after. The 126 still need reading, with the art-unit filter applied this time."
+  },
+  "subject_overrides": {
+    "228246": {
+      "ADV": "out",
+      "why": "Southern Methodist. Sampled titles are Advertising Campaigns, Digital Marketing Analytics, Digital Media Strategy, Internship — marketing and communication, CIP 09. Only Infographics reads as design. This override APPLIES the rubric's content test where the classifier's verdict failed it; it does not contradict it. Contrast SCAD ADVE, which was kept because its courses — Typography for Advertising Designers, Art Direction and Typography Essentials — are design, CIP 50.0402."
+    },
+    "130794": {
+      "HSAR": "art",
+      "FILM": "art",
+      "why": "Yale. HSAR is art history — American Art to 1900, Critical Approaches to Art History — which is CIP 50.07, and FILM is film and video, CIP 50.06. Both families are in scope and counted at 128 peer institutions including Pratt HAD, SCAD ARTH, Temple ARTH, UT Austin ARH, UCSD VIS and UCLA FILMTV. Yale is the only mainstream art-history prefix in the corpus excluded. This override APPLIES the content test where the classifier's verdict failed it, exactly as the SMU ADV override does in the opposite direction."
+    },
+    "140951": {
+      "ELDS": "art",
+      "why": "Savannah College of Art and Design, 14 courses — BIM for Interior Design, Digital Prototyping and Fabrication Methods for Building Design. v0.12 explicitly protects interior design (CIP 50.0408); the architecture follow-up saw 'building design' and removed it anyway. This override APPLIES the rubric's own protection where the verdict failed it. SCAD ARLH stays OUT: architectural history is CIP 04.0801, not 50.07, and removing it costs SCAD 56 courses of denominator, which raises its percentages — the call is against our own interest, which is how it should read."
+    },
+    "232423": {
+      "ARTE": "art",
+      "why": "James Madison. ARTE carries the graduate certificate in art entrepreneurship — Leadership and Community Engagement in the Arts and Design, Business and Marketing in the Arts and Design, Ethics and Law in the Arts and Design, Arts Integration. The sample contained ZERO teacher-preparation courses: the classifier saw four arts-business courses and judged the prefix out. A plain misclassification on a clean sample, not a scope hole. ARTS added: Advanced Arts Administration Internship and 2 more, arts business on a clean sample, same misclassification as ARTE at the same school.",
+      "ARTS": "art"
+    },
+    "190150": {
+      "AHIS": "art",
+      "why": "Columbia. 35 art-history courses — American Conceptualism, Chinese Art, Beyond El Dorado — judged out while art history is counted at 87 other prefixes. A plain misclassification on a clean sample."
+    },
+    "143048": {
+      "ARTSAD": "art",
+      "why": "School of the Art Institute of Chicago. Arts Administration and Policy. The whole-prefix scan matched only 31 of 129 titles, but reading the other 98 settles it: DIY: Self-Management for Artists; The Working Artist: Life After School; Artists Self-Promotion; Artist Start-Up: Personal Finance, Investing and Real Estate; Creative Industry of Artists; Commercial Galleries and Artists; Street Law for the Artist; Curating Yourself; How Grants Work; Follow the Money: How Arts Philanthropy Works; Tracking and Pricing Provenance; Art Market Issues. Every course in the prefix is art-world — arts business, arts law, curatorial and exhibition practice, cultural policy. Not one music, theatre or dance course. The 31/129 ratio was a string-match artifact, not a heterogeneous department."
+    }
+  },
+  "override_policy": "An override may only ever APPLY the rubric's content test where a verdict failed it. It may never contradict the test to reach a preferred answer — that is a hand edit and a hostile reader will find it. Every override is published with its reason and the classifier's own verdict beside it.\n\nOverrides do not scale, and this is a hard limit rather than a preference. Two in 165 schools is a correction; twenty is an undocumented rule. A class only counts as a class once the instrument that found it has been checked. The first consensus scan reported 50 against consensus; most were its own false positives — delivery exclusions counted as dissent, and a film shape that matched any title containing 'film' or 'animation', sweeping in journalism, theatre and communication and reporting them as a class of 13. This policy responds to class size, so a scan that manufactures a class would have fired it on nothing. Verify the finder before acting on the finding.\n\nBefore publication, run the consensus scan — every prefix whose verdict disagrees with the corpus consensus for prefixes of its shape — and read it. If it returns a handful, overrides stay. If it returns a class, write the rule instead, because a rule is reproducible by a hostile provost and a list of exceptions is not.\n\nAND THE SAME BAR APPLIES TO RULES. Measure the class before writing the rule, not after. Every scope rule, in either direction, needs a MAJORITY test: most of a prefix's sampled courses must belong, never merely some. An existence test admits a whole department for one course, and it has now done so three times in this project — an exclude rule that removed any prefix mentioning architecture, an include rule that admitted departments for a few film titles, and my arts-business rule that admitted 735 music courses at CalArts.",
+  "post_classification_scope": {
+    "how": "Everything in this block is applied as a NARROW CACHED FOLLOW-UP asked of already-judged prefixes, never by editing the subject prompt. The subject prompt must stay byte-identical to v0.10 — editing it re-keys every prefix in the corpus and re-rolls every verdict, which is the Loyola Marymount instability at corpus scale. v0.11 put the architecture rule in excluded_families, which IS rendered into the prompt, and would have done exactly that. The pipeline caught it. This block exists so the mistake cannot recur.",
+    "film_media_in": "A prefix whose courses teach film, video, animation or moving-image production, history or theory is IN SCOPE, CIP 50.06. Counted at 49 of 54 comparable departments already; the consensus scan found four judged against that consensus — Georgia Gwinnett FILM, Oberlin CIME, Marist MDIA, North Texas MRTS.\n\nTHE BOUNDARY, which is where this rule could do damage: making or studying moving images is in. Journalism and broadcast news, communication and public relations, theatre and acting, and media studies taught as social science are OUT, whatever the word 'film' or 'media' is doing in the title. The corrected consensus scan already vetoes that wording; carry the same vetoes here. Ask only of prefixes currently judged 'out' whose titles carry the film shape, and judge by course content as everywhere else.",
+    "open_item_nmds": "The New School NMDS, 359 courses, is genuinely mixed — 'Aesthetics of Editing' is film, 'Aesthetics of Web Design' is design, 'Animals as Media' is media theory — and at 359 courses it moves a major denominator. Let the film rule ask it, then read the verdict AND the full title list before accepting. This is the one prefix in the corpus that needs a department read rather than a sample read. Until then it is a stated open item, not a silent one.",
+    "arts_business_under_education_HELD": "NOT ENABLED. Drafted, corrected, and held until a scan shows there is a class to rule on.\n\nWHAT WENT WRONG: I wrote 'does this prefix ALSO carry arts business' — an existence test, not a majority test. Any music department with one Business of Music course passes it. Applied, it admitted 155 prefixes, overwhelmingly music and dance: CalArts MITM brought in 735 music courses (Accelerationism & Music, Bach Studies, Applied Flute, Advanced Studio Oboe), plus Cal Poly MU and DANC, East Carolina MUSC, Kent State MUS, Fordham DANC, Liberty MUSC. MITM is one of the performing-arts prefixes this project explicitly removed weeks ago. Music (50.09) and dance (50.03) are the FIRST exclusions in the scope.\n\nThe pipeline had already learned this in both directions — an exclude rule that removed any prefix MENTIONING architecture, an include rule that admitted whole departments for a few film titles — and fixed both with a majority test. I wrote a new rule without carrying that lesson across.\n\nTHE CORRECTED TEXT, if a scan ever justifies enabling it: a prefix currently judged 'out' is IN only when MOST of its sampled courses are arts business, arts leadership, arts management for practitioners, or arts entrepreneurship. Music, dance and theatre prefixes stay OUT regardless of how many business courses they carry. JMU's ARTE would still pass — all four of its courses are arts business and none is teacher preparation.\n\nBEFORE ENABLING IT: run the scan. Count prefixes currently judged 'out' whose sampled titles are MOSTLY arts business. A handful means overrides, which is what the override policy says and what the consensus scan already found — 12 genuine disagreements corpus-wide. A class means write the rule. I wrote a corpus-wide rule for one school, which is precisely what the policy forbids.\n\nMEASURED, AND IT STAYS HELD. The scan found a class of five prefixes and 34 courses: NC State EMA (15), Oklahoma State AADM (8), Utah Tech ARTM (4), JMU ARTE (4, already overridden), JMU ARTS (3). By the override policy that is a handful, so all five are handled as overrides and the rule is not enabled. Measuring the class cost nothing and stopped a second corpus-wide rule being written for five cases.",
+    "makers_practice_rule": "DOCUMENTATION, NOT AN EXECUTABLE FOLLOW-UP. No _in or _out suffix, deliberately. The maker rule is implemented in code from maker_rule.lexicons; this entry explains it. Keys in this block ending _in or _out are executed by followup_rules(), which reads direction from the suffix — so naming it makers_practice_in would have sent this prose to the model against every out-prefix in the corpus, roughly 18,000 uncached asks returning answers that are not the rule. Skipped and logged exactly as arts_business_under_education_HELD is.\n\nTHE MAKER RULE. An additional admission path, applied as a narrow cached follow-up. It admits; it never removes, and it never overrides a family exclusion.\n\nORDER OF APPLICATION: the family exclusions in subject_scope apply first and absolutely — music, dance, theatre, trades, agriculture, life sciences, communication and journalism, family and consumer sciences, architecture. This rule may only admit a prefix that no family exclusion has already removed. That is why it needs no performing-arts term of its own, and it is why DePaul PAM (Performing Arts Management, artperf 0.88) cannot be admitted by it.\n\nTHE TEST, on prefixes currently judged out:\n  maker's practice  >= 0.50   share of sampled titles addressing someone MAKING the work — their own practice, their own business, their own career as a maker\n  art referent      >= 0.50   share naming art, design, creative or cultural work\n  admin_only        <  0.50   share that is administrator training and nothing else\n\nWHY MAKER'S PRACTICE AND NOT BUSINESS SHAPE. My §5 ruling was that the test is WHO THE COURSE IS FOR. Business shape measures vocabulary, which is why Oklahoma State's AADM scores 1.00 while being the purest administrator training in the register. Maker's practice measures address: American AMGT 0.03, George Mason AMGT 0.08, AADM 0.12, Utah Tech ARTM 0.25, against NC State EMA 0.87. The pipeline's version implements my ruling more faithfully than my own wording did, and I am adopting theirs.\n\nONE THRESHOLD IS INERT AND ONE IS LOAD-BEARING, and v0.24 conflated them. admin_only is inert: no prefix clearing maker's practice >= 0.50 has an admin_only above 0.00, so the admit set is identical from 0.2 to 0.6 and there is nothing to defend there. maker's practice is NOT inert: Western Carolina FPA sits at exactly 0.50 and falls out at 0.51. That threshold is a chosen number and must be published as one. It still does not split the two AMGTs — both are below 0.10 — which was the property the rule was picked for.\n\nadmin_only stays in the rule although it currently does no work: it is what makes the rule READ as a test of who the course is for rather than an accident of two terms, and it is the term that will matter first when the corpus grows. Note it is asymmetric — a title naming both administration and practice counts on the practice side, so TCU ARLE reads 0.71 admin but 0.29 admin_only. The measure leans generous toward any programme that puts 'entrepreneurship' in an administration title.\n\nADMITS TODAY: NC State EMA, Western Carolina FPA. Two prefixes.",
+    "art_education_out": "BRINK'S RULING, 2026-09-16: art education is out of scope. Teacher preparation for art teachers is not a bottega subject. FSU ARE, Arizona ARE, NYU ARTED, NYU MPAIA — six prefixes, 209 courses.\n\nMAJORITY TEST, as every scope rule requires: a prefix is removed only when MOST of its sampled courses are teacher preparation — student teaching, curriculum, classroom methods, assessment, certification. A prefix carrying arts business or studio work alongside teacher preparation is not removed; Temple's ARTE is the case that must survive.\n\nApplied as a cached follow-up over prefixes currently judged ART. NOT written into subject_scope.excluded_families, which is rendered: putting it there would move the subject signature and re-roll roughly 19,000 verdicts, which is exactly the v0.11 architecture mistake.",
+    "museum_studies_out": "Museum studies is OUT, on Brink's ruling without a new principle: arts administration teaches how to get a job, not how to make jobs. Museum Management, Museum Financial Management, Museum Collection Management and Ethics is arts administration with a building attached. Same line as AADM and AMGT. Curatorial and museum coursework inside an INCLUDED art prefix still counts and the composition pass already buckets it as history and theory — nothing is lost, it is counted where it belongs.",
+    "art_therapy_out": "Art therapy is OUT. CIP 51.2301, health professions — not a CIP 50 family and not a bottega subject, on the same numerator/denominator argument that removed architecture. Majority test: George Washington's ARTH is named for art history and samples as art therapy, and only the sample can say which it mostly is.",
+    "instructional_design_out": "Instructional design and educational technology are OUT. CIP 13, education. The design_not_art subtraction in the maker rule's lexicon was built for exactly these prefixes and already moved eight below the art-referent line; this makes it a scope family rather than a lexicon side effect.",
+    "creative_writing_out": "Creative writing is OUT. CIP 23.13. Admitting it would open every English department with a fiction workshop.",
+    "design_schools_in": "Design-school prefixes are IN — CIP 50.04 — and this is the one rule in this round that adds. DePaul DES (a drawing sequence for designers, mislabelled performing arts in the scan), DePaul HCD, Minnesota DES/DESI, Arkansas ARDS, UT Arlington CTEC. Majority test as always.\n\nCONFIRM THE HOUSING FIRST for Minnesota's three: a College of Design whose prefixes sit outside its own art unit is the shape the rule is for, but Colorado State's IDEA reads 0.88 art referent and is housed in Health and Human Sciences. If any Minnesota prefix sits outside the College of Design, IDEA logic applies and it stays out. Titles cannot settle this and the rule must not pretend they can.",
+    "fashion_design_in": "ADMISSION HALF of the fashion split. Over prefixes currently judged OUT: a prefix whose MAJORITY of sampled titles are fashion DESIGN or production — pattern, draping, construction, sewn product, apparel design, fashion drawing, collection — is CIP 50.0407 and is admitted.\n\nFashion DESIGN and production is CIP 50.0407 and IN. Fashion MERCHANDISING, retailing and clothing-and-textiles is CIP 19.09 / 52.19 and OUT — family and consumer sciences is already an excluded family and this is it wearing an art word. Majority test on sampled titles. Design and production signals: pattern, draping, construction, sewn product, apparel design, fashion drawing, collection. Merchandising signals: merchandising, retailing, buying, consumer behaviour, socio-psychological aspects of dress, product development as a business function. Eleven prefixes, ~300 courses; the largest class in the scan.",
+    "fashion_merchandising_out": "REMOVAL HALF of the fashion split. Over prefixes currently judged ART: a prefix whose MAJORITY of sampled titles are merchandising, retailing, buying, consumer behaviour or socio-psychological aspects of dress is CIP 19.09 / 52.19 — family and consumer sciences, already an excluded family — and is removed. See fashion_design_in for the full rule; the two halves are one decision and must be read together.",
+    "architecture_retired": "RETIRED at v0.44 and moved into subject_scope.excluded_families, where the subject classifier decides it once, with the prefix's titles and its programme context in front of it. See scope_gates.architecture_ruling for why.",
+    "graphic_communications_rule": "DOCUMENTATION, NOT AN EXECUTABLE FOLLOW-UP — applied by board, six rows. A key ending _out is run by --classify-scope as a model question against every art prefix at every school with no shape gate, which is the mechanism behind v0.44's 1,987-course design removal. This family's boundary runs straight through graphic design, and an ungated exclude asked 'is this graphic communications?' of 1,300 art prefixes is exactly the question most likely to take graphic design with it. Future cases are caught by artscan and ruled by board.\n\nGraphic communications — printing, prepress, packaging, colour management, bindery, flexography — is CIP 10.03, communications technologies, and OUT on the first stage of the art-unit rule. Majority test as always. Cal Poly GRC, Georgia Southern GCM, Appalachian State GCM, Ball State GCM, Western Michigan GPS, Ferris State GCOM.\n\nThe boundary the majority test must hold: GRAPHIC DESIGN is CIP 50.0409 and IN. A prefix whose courses design communications is in; a prefix whose courses reproduce, print and package them is out. 'Color Reproduction' and 'Bindery and Finishing' are the second; 'Typography' and 'Brand Identity' are the first."
+  },
+  "unranked_reasons": {
+    "principle": "A published reason a school is held back must be mechanically true of that school. A reason is not a diagnosis. The schools least able to object are the ones this lands on, so the bar is that a dean reading it can verify it.",
+    "publishable": [
+      "art-subject set below the 100-course floor — a count, checkable against the published prefix list",
+      "description coverage below the 70% floor — a measured rate",
+      "fewer than 50 courses harvested — a count",
+      "below the 50-degree ranking tier — an IPEDS figure"
+    ],
+    "review_only": "'art share implausibly low; subject classification failed' is a REVIEW TRIGGER, not a publishable reason. It is a heuristic on a ratio, and it misfires at large research universities whose art departments are genuinely small relative to the catalog.\n\nMaryland-College Park is the case. Flagged at 1.5%, it turns out to be a correct classification: every one of its largest prefixes — TLPL, INST, ECON, ENGL, PSYC, COMM, MUSC, HIST, BMGT, ENEE, ANTH, CMSC, JOUR, ARCH, THET — is properly out, and its art unit of 86 courses is simply what a 5,770-course university with a modest art department has. Nothing failed. Publishing 'subject classification failed' would have told a dean something untrue about their own institution, and it is exactly the kind of line a provost corrects in public.\n\nSo: when the flag fires, read the prefix list. If the verdicts hold, the published reason is the count floor alone. Keep the label only where classification genuinely failed — Penn State 0 of 51 prefixes, UTSA 0 of 63 across 1,864 courses — and say so in those words.",
+    "maryland": "University of Maryland-College Park: publish as 'art-subject set below the 100-course floor (86 courses)'. Drop the classification-failure clause. Its 86 courses are correct."
+  },
+  "implementation": {
+    "note": "Nothing in this block is rendered into any prompt. It describes what the pipeline must do, not what a model is told.",
+    "sampling": "Sample a prefix's titles with a deterministic seed per (unitid, prefix) — the pipeline uses sha256(unitid|prefix), in place since V20 and verified to draw identical samples on repeat calls. Use enough titles that a large prefix is not decided on a thin slice. Record the sample size and seed on the record.",
+    "verdict_stability_measured": "Settled, and my earlier reading was wrong. Columbia's 49 to 88 was not classifier instability: its course file changed between the two runs, 69 graduate-only courses becoming 126 across three departments, so different prefixes and different samples produced different verdicts correctly. Under a fixed seed the two-run comparison shows 0 of 20 prefixes differing at Columbia, JMU and Yale. Three-way voting would buy nothing and should not be built."
+  },
+  "publication_bar": "The same corpus classified twice must produce identical art-subject sets. Measured, not assumed: it holds.",
+  "rendered_blocks": "Blocks whose text reaches a model, and which therefore change a prompt signature when edited: axes[*].name / question / includes / excludes, classifier.instruction, subject_scope, composition.question and composition.buckets. Everything else — post_classification_scope, implementation, publication, subject_overrides, unranked_reasons, axis_exclusivity, override_policy, status — is read by the pipeline and never rendered.\n\nI have now put a rule in a rendered block three times: axis_exclusivity in v0.6 where build_prompt never read it, architecture in excluded_families in v0.11, and sampling in subject_scope in v0.15. Check this list before editing.\n\nAND A SECOND AXIS OF THE SAME ERROR: a key's NAME can make it executable. In post_classification_scope, a suffix of _in or _out means followup_rules() will run it against the corpus; any other name means it is documentation. Before adding a key here, decide which it is. Placement decides whether text reaches a model; naming decides whether it is executed. I have now been wrong about the first three times and the second once.\n\nAND A BIDIRECTIONAL RULE NEEDS TWO KEYS. followup_rules() reads direction from the suffix, so a rule that both admits and removes cannot live under one name — I first wrote the fashion split as fashion_split_rule, which would have been skipped silently like makers_practice_rule and done nothing at all. It is now fashion_design_in and fashion_merchandising_out, one decision under two keys, cross-referenced so neither is read alone. That is the fourth time a key's placement or name has decided whether a rule exists.\n\nFIFTH TIME. I wrote graphic_communications_out one version after v0.44 demonstrated that an ungated exclude reaches past its family, on a family whose boundary runs through graphic design. The pipeline caught it before it fired. The rule for this block, restated so it sticks: A FAMILY WHOSE BOUNDARY SITS NEXT TO AN INCLUDED FAMILY IS NEVER AN UNGATED EXCLUDE. It is a board, and artscan finds the next case.",
+  "override_register": {
+    "count": "Nine prefix overrides across 179 schools. Every one is a verdict the classifier got wrong on a clean sample — not a judgement call, not a preference, and in no case a contradiction of the content test. Stated plainly because nine is well past two: the subject classifier has a small but real error rate on prefixes that matter, and these are the cases found so far.",
+    "publication": "Publish the full register — school, prefix, direction, the classifier's own verdict, the sampled titles, and the reason — as part of the methodology, not an appendix. An override a reader can check is a correction; an override a reader discovers is a thumb on the scale.",
+    "floor_not_ceiling": "The scan reads SAMPLED titles, so a prefix whose sample happened to miss its business courses would not appear. Five is a floor.\n\nConverting it toward a ceiling costs nothing: for every prefix currently judged 'out', string-match the WHOLE prefix's titles — not a sample — for arts-business signal (entrepreneur, business, marketing, fundraising, arts administration, arts management, leadership). No API calls, no classification: it only decides which prefixes are worth a second look. Run it before publication.",
+    "string_scan_is_a_finder": "The whole-prefix string scan finds CANDIDATES. It does not decide them, and its hit ratio must not be used as the majority test.\n\nThe majority test exists to stop a HETEROGENEOUS prefix being admitted for a sliver: a 320-course music department with one Business of Music course. It does not transfer to a HOMOGENEOUS arts-administration prefix where the string match simply misses titles that carry no business vocabulary. SAIC's ARTSAD at 31 of 129 and The New School's NMGT at 25 of 119 look like minorities by ratio; the question is what the other 98 and 94 courses are. Arts policy, cultural theory and curatorial studies inside an arts-administration department are still that department. Music and theatre courses would not be.\n\nSo: read the non-matching titles before deciding. A ratio applied mechanically would have dropped SAIC's Artrepreneurship — at a top-ten art school — for the same reason a ratio applied loosely admitted 735 music courses at CalArts. Both are the same error: letting a count stand in for a reading.",
+    "pending": "RESOLVED, and the two went opposite ways — which is the case for reading rather than ratioing.\n\nSAIC ARTSAD is IN. 129 courses, all art-world, including several the venture and audience axes exist to find and currently cannot see at a top-ten art school.\n\nThe New School NMGT stays OUT, and the scan was right about it. Reading its 94 non-matching titles: Basic Accounting, Macroeconomics, Microeconomics, Business Law, Money and Banking, Human Resources Recruitment, Quickbooks, Intermediate Accounting, LEED Green Associate Exam Prep, Managerial Decision Making. It is a general management department. Exactly two of its 119 courses are arts courses — Arts and Cultural Marketing, listed twice. Its 25 business-string hits were business because it IS business.\n\nBoth prefixes looked identical by ratio — 24% and 21%. One is an arts-administration department and the other is a business school. No count could have told them apart.",
+    "unitids_verified": "Every override unitid must be read from the roster or the index, never typed from memory, and verified by name before the override is applied.\n\nTwo of these eleven were wrong when written: Utah Tech as 230667 (correct 230171) and SAIC as 144050 (correct 143048). Both came from memory. An override on a wrong unitid either silently does nothing — so the defect it was written to fix stays in the published numbers, looking fixed — or lands on a different school, which is worse. Verified against index_v16.csv:\n\n  228246 Southern Methodist · 130794 Yale · 140951 SCAD · 232423 James Madison\n  190150 Columbia · 199193 NC State · 207388 Oklahoma State · 230171 Utah Tech\n  232186 George Mason · 131159 American · 143048 SAIC\n\nEleven schools, thirteen prefixes: ADV, HSAR, FILM, ELDS, ARTE, ARTS, AHIS, EMA, AADM, ARTM, AMGT (George Mason), AMGT (American), ARTSAD. Publish both counts — 'eleven overrides' and 'thirteen prefixes' are different numbers and the register is what a reader checks.",
+    "two_populations": "The register holds two unrelated things and conflating them produced a false alarm — a report that the maker rule 'unseats 10 of 13', when running an arts-business test over Yale's FILM department is a category error. Stated so it cannot recur:\n\n  MISCLASSIFIED ORDINARY ART — Yale HSAR and FILM, Columbia AHIS, SCAD ELDS, SMU ADV, JMU ARTE and ARTS. Art prefixes the classifier wrongly judged out. Untouched by the maker rule, which is an additional admission path and not a replacement for them.\n\n  ARTS-BUSINESS — was EMA, AADM, both AMGT, ARTM, ARTSAD. Now resolved: EMA passes to the rule, AADM and both AMGT and ARTM are unseated by the §5 ruling, ARTSAD remains.\n\nREGISTER AFTER v0.24: six schools, eight prefixes. SMU ADV, Yale HSAR and FILM, SCAD ELDS, JMU ARTE and ARTS, Columbia AHIS, SAIC ARTSAD.",
+    "artsad": "SAIC ARTSAD stays an override and cannot be reached by any cut of any version of the rule: business shape 0.21, maker's practice 0.14. It fails the first term before admin_only is ever evaluated — and its admin_only IS low, 0.09, which does not help it. The artist-facing titles are real and are a minority of 129. My pre-committed outcome stands: a rule for the narrow class, ARTSAD as a stated override, its ratios published beside the reason."
+  },
+  "census_evidence": "The ~2,460 prefixes the scan correctly excluded — business-school entrepreneurship departments — are not waste. They are the evidence base for the census claim that entrepreneurship is taught elsewhere on campus, and they should be published as such: every entrepreneurship-titled course in the corpus, with its school, its prefix, whether that prefix is inside the art unit, and its source URL.\n\nThat turns a sentence into a list a dean can check against their own catalogue. It is also the honest answer to the reader who searches a university and finds entrepreneurship courses the index does not count: yes, and here is where they are.",
+  "lexicon_note": "The lexicon is stage one and is NOT rendered into any prompt, so adding terms leaves the axis signature unchanged and every paid classification stays cached. Stage one is tuned for recall: a loose term costs a few cents of stage two, a missing term costs a course that is never seen.\n\nFive terms come from the pipeline — business of, business for, startup, start-up, running a. Nine more come from reading SAIC's ARTSAD, where the courses most relevant to venture carried no business keyword at all: self-management (DIY: Self-Management for Artists), working artist (The Working Artist: Life After School), creative industry (Creative Industry of Artists), commercial galler* (Commercial Galleries and Artists), philanthrop* (Follow the Money: How Arts Philanthropy Works), sustaining a, making a living (What Next? Making a Living as an Artist, at RISD), art business, design business.\n\n'business of art' was already a term; 'business of' generalises it to Business of Film/Video, Business of Design, Business of Photography. Compile every term with word boundaries, as the others are — ' ai ' matching 'painting' is the reason that rule exists.\n\nTECHNOLOGY, v0.48. The axis question and includes have said 'named software or hardware toolsets taught for creative work' since v0.5, and the 28-term lexicon covered only the computational-and-emerging half. Measured on 1,000 random un-shortlisted art-unit courses classified with the production prompt: technology recall ~41%, practice ~58%, audience ~70%, self ~76%, venture ~100%. The misses are the toolset half — 3D modelling, animation, motion graphics, Maya, ZBrush, Avid, Pro Tools, web design, programming for designers, game art, UX/UI, digital painting — and they fall unevenly: 12.2% of un-shortlisted courses at art colleges against 7.2% at universities (p ~ .04). A ranked axis was biased against the schools a reader expects to lead it. The lexicon goes from 28 to 115 terms. Stage one is recall-tuned and not rendered, so the course signature is unchanged and every cached verdict stands; stage two decides every new candidate exactly as before. Four proposed terms were dropped or narrowed: games — game art / game design / game development / level design already cover it; bare 'games' adds Olympic Games and game theory; pipeline — too generic alone — leadership pipeline, sales pipeline; animat*, vfx and compositing reach production pipelines; virtual — replaced by the specific forms: virtual reality and virtual production are already terms; add virtual environment* and virtual world*; tangible — narrowed to tangible interface*. Every term compiles with word boundaries; 'ai' matching 'painting' is why.\n\nSELF AND PRACTICE, v0.51. Brink's ruling — an internship is practice — makes both audit findings LEXICON GAPS rather than exclusions: material the published rule already covers that the prefilter cannot see, the same class as technology at v0.48. An internship is placement inside an apparatus someone else owns, which is the practice definition verbatim.\n\nSELF, 32 to 46. The INCLUDES list has said 'critique taught explicitly as a method' since v0.5 and the lexicon carried only `critical feedback`. Thirteen of fifteen audit misses are critique courses and the miss rate is SEVENFOLD higher at art colleges — 1.4% against 0.2% — so the published self counts understate art colleges specifically, on the axis whose headline is absence. Recall 52.1%.\n\nPRACTICE, 33 to 55. 57 of 111 misses are internships and most of the rest portfolio courses; the lexicon had `portfolio review` but not `portfolio`, and nothing for placements. Recall 65.5%.\n\nTWO CHANGES TO THE PROPOSAL. `peer review` is NOT added — it is ubiquitous in science and writing courses and it is not what the axis means; `peer critique` is added instead, as the pipeline offered. And the self list is widened beyond critique to the terms the same INCLUDES sentence implies — `critical discourse`, `studio visit*`, `reflective practice` — because Temple's CRITIQUE AND CRITICAL DISCOURSE and Pratt's MODES OF CRITIQUE are already published self courses and a lexicon that would not shortlist them is the defect being fixed.\n\n`portfolio` IS ADDED, with its cost accepted. It will sweep portfolio STUDIO courses at art colleges, which are studio work and not practice, and the pipeline expects it to cost more to classify than every other term here combined. Stage two decides them, exactly as `modeling` shortlists figure drawing under v0.48. A recall-tuned stage one that omits the commonest word in its own axis to save classification cost is not recall-tuned.",
+  "precedents": {
+    "note": "NOT RENDERED into any prompt. Rulings recorded so they are consistent across sessions and visible in the methodology. A precedent moves into the axis text only when the evidence shows the classifier is systematically getting that class wrong — which re-keys the axis cache corpus-wide and is never done for a single course.",
+    "producing": "PRODUCING IS VENTURE when the course teaches development, financing, packaging, rights and distribution — the producer raising money and assembling a project is building an enterprise around work. It is PRACTICE when it teaches operating inside a studio's apparatus as an employee.\n\nUCLA FILMTV 287A and 287B are venture and the classifier applied the test correctly: 'development, production, and distribution... identifying material, attracting elements, and understanding basics of studio and independent financing and distribution.' Independent financing is the tell. No rubric change is needed for them.\n\n287C is over-inclusion, and the analysis chat was right to separate it. Its subject is screenplay development for thesis projects — 'script analysis and creating set of viable development notes', 'completion of written outline' — with pitching as one element at the end. Primary subject is the student's own thesis project, which the rubric already excludes. It is ONE course in a three-course sequence with near-identical titles, and one course does not justify re-keying the corpus. Recorded, not acted on.",
+    "industry_as_scholarship": "A course that teaches how a field operates, without the student transacting, is NEITHER axis — it is history and theory. 'The Art Market: Contemporary & Historical Perspectives' and 'Capital and Power in the Art World' are scholarship. So, probably, is NC State's 'Understanding the Arts Economies'. This is the branch that lets the venture figure stay low honestly rather than by timidity, and it is the one to watch in the 158.",
+    "watch_list": "Marginal calls in the new evidence, recorded now so they are checked rather than rediscovered: SAIC 'Senior Seminar: Designed Objects Colloquium' reads as a capstone; NC State 'Understanding the Arts Economies' and 'Ecological Systems and Problem Solving in the Arts' read as scholarship. Three courses across two schools — noted, not ruled on.",
+    "half_b_ruling": "HALF B IS IN, and the binary is only tractable because Half A carves out the other side of it. Together the two halves implement the three-way test recorded in precedents.producing and precedents.industry_as_scholarship: transact on your own behalf is venture (Half B), study the field is neither (Half A), be prepared for employment is practice (already excluded).\n\nRuling Half B OUT would have removed UCLA FILMTV 287A and 287B, which v0.23 already found the classifier had judged correctly — 'understanding basics of studio AND INDEPENDENT financing and distribution' — and SAIC's Artrepreneurship, and NC State's EMA sequence. That is most of what the venture axis exists to find.\n\nWHAT THIS RULING RESTS ON, stated plainly: the 158 disputed descriptions have still not been read. This is a DRAFT written to be tested by the gate, whose oracle was fixed before the run. If the gate's 21 expectations do not hold, the ruling changes before the $109 is spent, not after. No venture figure is published either way until the gate reports.",
+    "gate_1_failure": "The first gate spent $5.71 and failed 7 of 19. The diagnosis was the pipeline's and it was exact: THE INCLUDES WERE A LIST AND THE EXCLUDES WERE A QUESTION. A list matches lexically; a question needs the reader to hold two things at once. Sitting in parallel, the list won — so Coastal Carolina FILM 425 became venture on a sentence whose subject is 'Students examine the full spectrum of Hollywood's operations'.\n\nHalf A under-fired the mirror way: it named The Art Market and Understanding the Arts Economies as examples, and the two EMA courses that moved were the two whose titles matched those examples. Example-matching, not principle-application. So v0.31 names no example titles in the excludes at all — only the linguistic signals of analysis.\n\nThe fix is ORDER. Three questions, stop at the first yes, analysis first and employment second, so transaction vocabulary is never reached by a course that fails an earlier gate. The two controls that held under v0.30 — UT Austin RTF 347P and UNLV FILM 333 — held because they contain no transaction nouns; v0.31 has to hold them for the right reason instead.",
+    "287c_reversed": "FILMTV 287C's oracle expectation changes from [] to VENTURE, and it is a reversal of my own v0.23 read, made before the Half B wording existed.\n\nUnder the ordered test: not analysis; not employment — pitching your own thesis project to industry executives is seeking a greenlight for your own project, not applying for a job; and at question three the student is packaging and selling work they authored. That is venture. v0.23 called its subject screenplay development and excluded it as capstone — but the capstone exclude is about courses whose subject is MAKING the work, and 287C's subject is pitching it. The capstone line in v0.31 now says so explicitly.\n\nRecorded as a reversal rather than folded into the other six failures, as the pipeline asked.",
+    "gate_2_failure": "v0.31 fixed every v0.30 failure and emptied the axis: NC State 11 venture courses to one, Western Carolina to zero, UCLA's producing sequence gone. $11.42 across two attempts, both the same mechanism in mirror image. v0.30's includes were a list of transaction nouns; v0.31's question one was a list of analysis verbs. A LIST MATCHES WHATEVER WORDS APPEAR, REGARDLESS OF WHAT THE SENTENCE IS ABOUT.\n\nEMA 430 is the decisive case and the pipeline's read of it is the fix: 'Students analyze arts businesses through the use of case studies IN ADDITION TO EXECUTING AN ENTREPRENEURIAL PROJECT concerning the arts in a Raleigh community.' It says outright that it does both and names the analysis first, so stop-at-the-first-yes excluded a capstone in which students run a real venture. Almost every real arts-entrepreneurship course analyses something in service of building something, which makes any analytical component fatal under an ordered test.\n\nSo v0.32 drops the ordered stop-gates entirely. One pivot — equipped or informed — applied to the whole description, with analysis explicitly named as method rather than disqualification, and one disambiguation for whose venture it is. EMA 110 is the control that shows this is a balance and not a keyword: it contains 'students explore' and survived, because its subject is starting an arts business and nothing outweighs that.",
+    "adn_496": "NC State ADN 496 'The Business of Art and Design' becomes an OBSERVATION, not an expectation. It went to practice under v0.31, caught by the employment question on 'the mechanics of gainfully applying their fine and applied arts education'. That phrase is genuinely ambiguous between making a living from your own work and being employed, and I do not have the full description. Rather than defend an expectation I cannot defend, it is observed and read after the run. Recorded explicitly as the pipeline asked, not folded into the other failures.",
+    "ucla_register": "UCLA FILMTV 287A and 287B failed v0.32 for their REGISTER: the catalogue opens with 'Introduction', 'Overview', 'understanding basics', and the pivot read that as informed. The students are first-year producers-programme students being equipped to produce their own films, and 287B has them presenting two unproduced screenplays toward their own thesis projects.\n\nThe pipeline's observation is exact and decides it: THIS IS THE SAME MOVE THAT FIXED EMA 430. That description names its analysis first and its execution second, and v0.32 correctly looked past the order. UCLA names its register first and its thesis work second. Treating one as presentation and the other as substance would be incoherent.\n\nThe addition keys on the student's own work being identifiable, which is what keeps the negative controls out: Coastal Carolina FILM 425 examines Hollywood's operations, RTF 347P explains how media industries operate, and in neither does a student make anything. Register was never what excluded them.",
+    "new_school_pair_practice": "New School NFLM 0347 and 3473 move from an expectation of [] to an expectation of PRACTICE, recorded as a reversal. They went to practice under v0.32 and the classifier followed the disambiguation exactly: role-played Hollywood deal-making in hypothetical scenarios, on behalf of firms that are not the student's, described as business knowledge for people entering the film business. Practice is the better answer. The [] expectation was written when the only question was whether they were venture, and it predates the rule — the same shape of correction as 287C and ADN 496.",
+    "ema_380_510_observed": "EMA 380 and EMA 510 become OBSERVATIONS, deliberately rather than by failing quietly. 380 is a discussion-based examination of problems entrepreneurs confront; 510's whole claim to venture is the word incorporation inside a description that opens with surveys. The pipeline is right that a wording catching these two would likely re-admit EMA 365 and 520, which the axis needs to keep out. The two directions are close together here, and tuning toward the ones we want is how an instrument gets fitted to its answer. Observe them, read them after the run, and do not move the wording for them.",
+    "gate_3_failure": "v0.33 passed a 23-course board and stripped the axis's centre of mass. Measured against the disputed 158 — the venture-relevant population — it lost 27 venture verdicts and gained 9, net −18, while the art-unit total read +6% because gains elsewhere masked it.\n\nWHAT LEFT: The Business of Jewelry, Business and Entrepreneurship for Jewelry, Business Practices for Fibers, Illustration Business Strategies and Entrepreneurship, The Business of Illustration, Business of Art, Interior Design Business Practices, The Business of Design, Business of Film — to practice. And Branding and Entrepreneurship for Fine Arts, Digital Media Entrepreneurship, Fashion Entrepreneurship, Design + Entrepreneurial Thinking, Business Principles: Design and Entrepreneurship, Introduction to Arts Entrepreneurship, The Business of Cinema — to nothing.\n\nTWO OVER-REACHES, one per half, and the pipeline diagnosed both. The employment branch read 'business practices for <medium>' as preparation to work in a field, when the medium is the student's own. And the register problem resurfaced: v0.33 fixed it for UCLA's Overview by tying the exception to a named professional sequence, which Oregon State's INTRODUCTION TO ARTS ENTREPRENEURSHIP does not have. v0.34 makes register unconditional and mechanical — strip the word, read what remains.\n\nWHY THE ORACLE COULD NOT SEE IT: the board held NC State's EMA sequence, UCLA's producers and five industry surveys, and not one business-of-your-own-craft course. Twenty-three passed while the axis moved off itself. The board must carry the commonest case before the next attempt.",
+    "gate_requires_both": "TWO CHECKS BEFORE THE CORPUS, EVERY TIME, and this is now a rule rather than a suggestion. The full gate grades 23 courses of 5,710 and tests collateral across schools. The 158 check grades the 156 located courses the venture claim actually rests on. v0.33 passed the first with a clean board and failed the second at net −18. Neither substitutes for the other.",
+    "addressee_regression": "v0.34 recovered eight of the twelve stripped core cases and regressed Half A: EMA 365 and 375 went [] to venture, undoing v0.33's only clean success. Neither has a student doing anything — 365 outlines the role and perception of art in marketplaces, 375 explores arts economies — and both carry 'for the emerging arts entrepreneur'. The pipeline's read is that the medium rule picked up the address and treated it as the student's own enterprise.\n\nv0.35 makes the addressee line explicit and puts it ABOVE the medium rule: who the description says a course is for is never who acts in it. This was present in v0.32 as one clause and was lost when the question was rewritten for the register fix; it is restored as a named paragraph rather than a sentence, because it has now decided two rounds.",
+    "art_451_and_the_register_rule": "ART 451 Introduction to Arts Entrepreneurship was the motivating example for v0.34's register rule, and its description does not support the expectation: 'Survey of the business strategies behind a successful career in the arts.' Strip the register word and a survey about careers remains. The pipeline demoted it to an observation and was right to.\n\nRECORDED PLAINLY: the rule was written for a case that did not need it. It still earns its place on cases that do — UCLA 287A's Overview, RISD IDISC 2382's Business Principles — so it stands, but not on the example that produced it. The pipeline chose its core-case list from titles and caught itself; the same error is in the rule's justification and is corrected here rather than left in the record.",
+    "centre_never_tested": "Seven of the eight courses the analysis chat named as the axis's centre have no verdict under v0.33 or v0.34 at all — Artist Start-Up, Go Fund Yourself!, Working for Yourself in the Creative Marketplace, Design Administration, The Business of Design, Fashion as Mission, Interactive Media Startup. They have never been on a board.\n\nFour wordings have now been graded on edges and never on the centre. Oracle v8 puts all eight on as venture expectations, and holding them is the test that matters most: they are the courses nobody has ever argued about, which is precisely why nobody checked them.",
+    "three_disputed_courses": "ART 451, ILLU 450 and IDISC 2382/2511 are a disagreement between the pipeline and the analysis chat, not a rubric defect. Settled here by reading the text, and I side with the pipeline on all three.\n\nART 451: 'Survey of the business strategies behind a successful career in the arts.' A survey, about careers. ILLU 450: 'Whether working for an organization or as an entrepreneur... further their preparation for this competitive market... individual career goals.' It offers both paths and closes on career goals. IDISC 2382/2511: 'The premise of this lecture course... to understand a basic business vocabulary.' Understanding a vocabulary is informing.\n\nNone is a venture course under any wording this project has written, and the analysis chat's own test for ILLU 450 — that if the employment branch stops it the test is too greedy — is answered by the description rather than by the branch: the course stops itself. STATED AGAINST MY OWN INTEREST: this adjudication improves v0.35's score by three rows, and it improves v0.29's by the same three. The gap does not move.",
+    "seven_wordings": "The final accounting, recorded because it is the most useful thing in this sequence. v0.29, which nobody tuned, scores 125 of 141 against the 158 oracle. v0.35, after seven versions and seven people-days, scores 118 — fixing 8 and breaking 16. An edit can be right in every individual ruling and worse in aggregate, and the only reason we know is that someone built a fixed oracle before the first run and graded every attempt against it.\n\n$22.94 bought: a venture axis caught eating its own core cases, a sample drawn from the wrong population, a register rule justified by a course that did not support it, and a seven-version edit that is worse than its starting point. None of it reached a published number.",
+    "producer_ruling_2026_10_16": "BRINK, 16 OCTOBER, after reading the reliability study's twenty venture disagreements: producer, showrunner and other industry-role training is PRACTICE, not venture, unless the course is explicitly about producing one's own independent work or starting and running one's own production company. 'Producing Indie Films' and 'How to Start and Run a Production Company' are venture; 'Introduction to the Art and Business of Producing', as written, is not. It applies the make-jobs-or-get-one test directly: producer training gets one.\n\nTHIS REVERSES MY OWN PRECEDENT. v0.23 recorded 'producing is venture' and admitted UCLA FILMTV 287A and 287B on 'studio and independent financing'; v0.33 reversed 287C to venture as well. The tell I relied on — the word independent — named a financing route the course surveys, not the student's own production. The human coders read it the way the ruling now does, the classifier agreed with them, and my codebook example was the error. UCLA leaves the venture census.",
+    "marketing_own_work": "Marketing one's OWN work counts as both venture and audience: a course on marketing a product line the student makes is V and A. Branding or marketing theory for organisations the student does not own is neither. The axes already permit multiple labels; this states which case gets both.",
+    "audience_definition_proposed": "PROPOSED FOR CODEBOOK v3 AND THE NEXT RENDERED REVISION, NOT RENDERED NOW: audience is 'does the course teach artists to find and develop distribution for their own artwork directly, and build an audience.' The coders' lowest agreement, A at .54, traces to the broader word admitting marketing in general. Rendering it now would move the course signature a second time inside one gate cycle and confound what the gate measures; it goes with the self/audience rulings from the supplementary sets.",
+    "gate_caution_v31": "THE ONE RISK IN THIS LINE, named before the gate rather than after. v0.31 required the student's own work in its venture question and emptied the axis — NC State 11 to 1, UCLA's producing gone, the business-of-your-own-medium courses gone. The new exclude uses the same words, so it is scoped to industry-role training in its own text. The gate's pass condition therefore has two halves: the re-marked producer rows move to practice, AND every business-of-your-own-craft and arts-entrepreneurship course on the board stays venture — JEWL 370, FIBR 337, EMA 110/370/430, FDM 35280, ARTSAD 4022. If any of those leaves venture, the line has generalised and goes back to the bench.",
+    "gate_v052_failure": "v0.52 FAILED THE ORACLE, verified against the transition table. 53 verdicts moved on one clause: 20 none→practice, 14 none→venture, 9 venture→practice. Expectations 118 → 115 of 147. Producer rows 6 of 7 to practice; NYU GFMTV GT 2104 went none→venture on the word 'independent'. One genuine guard failure — SCAD FIBR 337, Business Practices for Fibers, venture→practice — fails the gate outright.\n\nTHE MECHANISM, and it is mine. I wrote the carve-out — entrepreneurship at any level, manufacturer-level, social entrepreneurship, freelancing 'all remain venture' — as a limit on the exclude, to stop the v0.31 narrowing. Rendered inside an excludes list the model read it as an includes list, and the axis widened. And 'producing, showrunning, agenting, development, distribution' plus 'employed in that role' read as 'any course about working in an industry', which is how FIBR 337 left. A fix for one failure mode, written in the place the classifier reads positively, produced the other.\n\nPROFPRAC 3906 WAS NEVER A VALID GUARD — it read practice under v0.51 as well, the freelancing-with-a-career-frame case the exclusivity tiebreak sends to practice, same as SFIN 413. Moved to observation; it does not affect the result.",
+    "v053_last_wording": "v0.53 IS THE LAST WORDING ATTEMPT ON THIS BOUNDARY. Three changes, taken from the analysis chat's read of the failure: the carve-out is REMOVED rather than reworded, because the includes already say what stays venture and an exclude should say only what leaves; the trigger is defined by THE ROLE THE STUDENT WOULD HOLD in someone else's apparatus, not by industry vocabulary; and the own-work exception requires own work or own company to be the course's SUBJECT, not the word 'independent'. The business-of-own-medium sentence LIMITS the trigger — it says the line does not apply — and asserts no positive class, which is the difference from v0.52's carve-out.\n\nSTOP RULE, fixed before the run: PASS requires all nine guards venture, all seven producer rows practice, and no expectation worse than its v0.51 verdict. ANYTHING ELSE AND WORDING STOPS. The boundary goes to a hand-ruled industry-role board applied to the venture census as a correction list with a reason per row — twenty to forty rows, free, stable, extended to new schools by a person reading — and the paper reports it as a stated resolution limit beside the architecture board. Eight wordings, two boundaries, the same result: a line a person draws in minutes that text instructions keep failing to draw.",
+    "gate_v053_result": "v0.53 FAILED THE STOP RULE fixed before the run, and wording stops. Guards 9 of 9 — the carve-out removal worked. Producer rows 6 of 7: NYU GFMTV GT 2104 went none→venture, exactly as under v0.52. Regressions 4 against v0.52's 11 — SCAD JEWL 735, ECU ART 2890, Kent FDM 65055, CSU CART 208. Improvements 16. Two candidates, $0.32 total, corpus untouched.\n\nTHE FINDING FOR THE PAPER, with v0.52 → v0.53 as the evidence: the second wording fixed nearly everything the first broke and still could not close the last rows. That is the same signature as the architecture boundary — a line a person draws in minutes that carefully written text instructions keep failing to draw. Two boundaries, two boards, one stated resolution limit.",
+    "gt_2104_needs_a_reading": "NYU GFMTV GT 2104 'The Business of Creative Producing': two differently worded instructions independently returned venture against an oracle mark of practice. When two instruments agree against the oracle, the oracle row is the thing to check first. Read the full description with Brink and rule it on the board; if it is about the student producing their own work it is venture and the oracle row was wrong, as 287C's was in the other direction."
+  },
+  "maker_rule": {
+    "lexicons": {
+      "how_to_compile": [
+        "Each list has two kinds of term. An EXACT term matches only as a whole word: the pattern is \\b + term + \\b. A PREFIX term matches from a word start and may be followed by more letters: the pattern is \\b + term, with no closing boundary. Matching is case-insensitive throughout.",
+        "The distinction is not cosmetic. 'artist' is EXACT in makers_practice, which is what stops it matching ARTISTIC. It is PREFIX in art_referent, where 'artistic' should count. The same string behaves differently in two lists on purpose, and that is the artefact fix of 2026-09-14 written into the rule.",
+        "In a multi-word term, a space matches a space or a hyphen, so 'start up' also matches 'start-up'. Terms are matched against the course TITLE only, never the description.",
+        "A ratio is the share of a prefix's distinct titles matching at least one term in that list. Denominator is the prefix's own titles, never the catalog. A prefix with fewer than 4 titles is not measured.",
+        "art_referent has one subtraction: a title whose only art-referent match is the term 'design', and which also matches a phrase in design_not_art, does not count. Nothing else is subtracted anywhere.",
+        "admin_only is computed, not listed: a title counts when it matches the admin list AND does NOT match makers_practice. A title naming both counts on the practice side. This measure is therefore asymmetric and leans generous toward any programme that puts entrepreneurship into an administration title — TCU ARLE reads 0.71 admin but 0.29 admin_only.",
+        "A term's meaning here is not its meaning in the axes. 'portfolio' and 'professional practice' sit in makers_practice because they ADDRESS a maker; in the axes they are PRACTICE and explicitly not venture. The maker rule decides who is in the art unit, never which axis a course carries. A reader who finds 'portfolio' in the rule that admitted an arts-entrepreneurship prefix should find this sentence before they find the apparent contradiction."
+      ],
+      "makers_practice": {
+        "exact": [
+          "artist",
+          "artists",
+          "portfolio",
+          "portfolios",
+          "startup",
+          "start up",
+          "start ups",
+          "your own",
+          "your work",
+          "your practice",
+          "self promotion",
+          "self management",
+          "professional practice",
+          "professional practices",
+          "studio practice",
+          "studio practices",
+          "working artist",
+          "life after school",
+          "independent practice",
+          "independent design",
+          "independent artist",
+          "startups"
+        ],
+        "prefix": [
+          "freelanc",
+          "entrepreneur"
+        ]
+      },
+      "art_referent": {
+        "exact": [
+          "art",
+          "arts",
+          "fine art",
+          "fine arts",
+          "art work",
+          "artwork",
+          "craft",
+          "crafts",
+          "media art",
+          "creative practice"
+        ],
+        "prefix": [
+          "artist",
+          "galler",
+          "curat",
+          "exhibition",
+          "photograph",
+          "fashion",
+          "illustrat",
+          "sculpt",
+          "paint",
+          "printmak",
+          "animation",
+          "ceramic",
+          "typograph",
+          "design",
+          "film",
+          "cinema",
+          "studio",
+          "museum"
+        ],
+        "design_not_art": [
+          "career design",
+          "design and planning",
+          "exploration and design",
+          "instructional design",
+          "curriculum design",
+          "research design",
+          "experimental design",
+          "design of experiments",
+          "universal design",
+          "database design",
+          "organizational design",
+          "design thinking for business",
+          "design thinking for management"
+        ]
+      },
+      "admin": {
+        "exact": [
+          "arts management",
+          "arts administration",
+          "arts leadership",
+          "development office",
+          "board governance",
+          "board member",
+          "governance",
+          "museum management",
+          "collections management"
+        ],
+        "prefix": [
+          "fundrais",
+          "grant writ",
+          "philanthrop",
+          "arts organi",
+          "nonprofit",
+          "non profit"
+        ]
+      }
+    },
+    "thresholds": {
+      "makers_practice": ">= 0.50",
+      "art_referent": ">= 0.50",
+      "admin_only": "< 0.50"
+    },
+    "artefact_record": [
+      "Two defects were found in the measure before it was published, both by rerunning it rather than by reading it.",
+      "'design' matched any sense of the word, including Career Design and Instructional Design. 1,524 titles in the corpus carry design in a plainly non-art sense. Fixing it moved eight prefixes below the art-referent line: Old Dominion IDT (0.54 -> 0.22), Cal State San Bernardino ETEC (0.50 -> 0.05), Cal State Fullerton IDT (0.75 -> 0.17), Kennesaw LDT (0.62 -> 0.38), Colorado State INTD (0.50 -> 0.47), George Mason EDIT (0.51 -> 0.49), UMass Dartmouth AED (0.50 -> 0.45), Utah State ISTU (0.50 -> 0.00).",
+      "It left SCAD ELDS at 0.93 — Electronic Design II, Visualization in Digital Design, BIM for Interior Design. That is the evidence the subtraction discriminates rather than blunts: a genuine design prefix keeps its score and the educational-technology prefixes lose theirs.",
+      "'artist' matched ARTISTIC, so East Tennessee FPAS (Artistic Vision I/II) read 0.60 on maker's practice and CalArts ICSE read 0.67. Word-bounding makers_practice drops them to 0.00 and 0.33. Both fall out of the rule. This is why the same string is EXACT in one list and PREFIX in the other.",
+      "A third artefact was found when the term lists were checked against the regexes the ruling was measured with, on 57,157 distinct sampled titles. The measured regex matched 'craft', 'film' and 'cinema' as bare substrings, so INTRODUCTION TO UNMANNED AIRCRAFT SYSTEM, SPACECRAFT AND SATELLITE ARCHITECTURE, Magic Witchcraft and Religion, and eleven Stagecraft courses all counted as art referents. Word-bounding removes them. 'start up' likewise matched Idea2Startup, and 'professional practice' matched Interprofessional Practice in Healthcare.",
+      "A fourth was found by the corpus check, not the sample check: the measured regex 'start[- ]?up' matched Startups as a substring, and the term list's exact 'startup' did not. Chapman ENTR read 0.50 on maker's practice and fell to 0.42 on one title, Managing and Scaling-Up Operations for Startups. 'startups' added. Chapman ENTR has art referent 0.00 and could never be admitted either way, so the rule's outcome never depended on it — but a term list that silently drops a plural is a defect whatever it happens to decide."
+    ],
+    "expected_result_at_publication": {
+      "admits": [
+        "199193 EMA",
+        "200004 FPA"
+      ],
+      "unseats": [
+        "207388 AADM",
+        "230171 ARTM",
+        "232186 AMGT",
+        "131159 AMGT"
+      ],
+      "holds_as_override": [
+        "143048 ARTSAD"
+      ],
+      "note": "ARTSAD fails makers_practice at 0.14 before admin_only is evaluated. Its admin_only is 0.09 and it does not matter. Publish both ratios beside the override reason.",
+      "cut_insensitive_between": {
+        "admin_only": [
+          0.2,
+          0.6
+        ],
+        "makers_practice": "NOT cut-insensitive — see scoping_correction",
+        "scoping_correction": "The block as delivered read 'cut_insensitive_between [0.2, 0.6]' without naming which threshold. Scoped here, because read as applying to all three it is false.\n\nTRUE of admin_only: no prefix clearing makers_practice >= 0.50 has an admin_only above 0.00, so the admit set is identical from 0.2 to 0.6. That was the original finding and it holds.\n\nFALSE of makers_practice: Western Carolina FPA sits at exactly 0.50 and fails at any cut above it. The admit set is {EMA, FPA} up to 0.50 and {EMA} from 0.51. The makers_practice threshold is load-bearing and must be published as a chosen number, not as an insensitive one."
+      },
+      "minimum_evidence_admission": "Western Carolina FPA is admitted on the thinnest evidence the rule permits: n=4, the floor, at practice exactly 0.50 — two titles deciding it, Arts & Entrepreneurship and Arts & Entrepreneurship Intensive. One title either way flips it. Flag it in the register as a borderline admission, publish its n beside its ratios, and re-measure when Western Carolina's catalogue grows. It currently has zero venture courses, so nothing published depends on it today.\n\nUPDATED after the rule fired. FPA now has two venture courses, not zero, so the earlier note that 'nothing published depends on it' is out of date and should not be quoted. What depends on it: Western Carolina's venture COUNT, which is published, and its venture SHARE, 1.32%. What does not: any venture rank, because two is below the three-course floor.\n\nThe admission stands as measured. Raising the maker rule's minimum above four titles would be fitting an admission rule to one school's ranking consequence, which is the error this project has refused four times — and n=4 does not make the answer WRONG, it makes the department small. Publish n=4 beside the ratios in the register, flagged borderline, and re-measure when Western Carolina's catalogue grows."
+    },
+    "divergence_from_the_measurement": {
+      "note": "The published lists are not byte-equivalent to the regexes the ruling was measured with. They are deliberately stricter in four places, each a defect in the regex. Recorded here rather than smoothed over, because the ruling's published ratios were produced by the regex and the rule that ships is the list.",
+      "sampled_titles_compared": 57157,
+      "makers_practice_mismatches": "2 on the sampled titles, plus one plural (Startups) found only on the full corpus and since fixed",
+      "art_referent_mismatches": 43,
+      "admin_mismatches": 0,
+      "direction": "every mismatch is the list excluding a title the regex wrongly included; none is the list including something new",
+      "known_collateral": "Afrocinematique loses its art referent, because 'cinema' now matches only at a word start. One title.",
+      "requirement": "lexcheck.py section A recomputes all three ratios on the full corpus and names any prefix that crosses 0.50 in either direction. Zero crossings is the condition for publishing. If a prefix crosses, the ruling was made on a number this block does not reproduce and the discrepancy is resolved before v0.25, not after."
+    },
+    "performing_arts_guard": {
+      "why_published": "The guard's word list moves from code into the rubric so it is published beside the thresholds — a gate a provost cannot read is the condition v0.41 ruled against. Two false admissions made the case: Full Sail AAR, 'Audio Arts', admitted because `arts` is an art-referent term; Azusa GMAC, a music artist certificate — Applied Lesson, Chamber Music, Large Ensemble — admitted because `artist` sits in both maker-rule lists and the guard saw `music` in only one.",
+      "terms": [
+        "music",
+        "musician",
+        "musical",
+        "opera",
+        "choir",
+        "choral",
+        "orchestra",
+        "band",
+        "ensemble",
+        "recital",
+        "lesson",
+        "applied lesson",
+        "conducting",
+        "theatre",
+        "theater",
+        "acting",
+        "actor",
+        "stage",
+        "dance",
+        "ballet",
+        "choreograph",
+        "audio",
+        "recording",
+        "sound engineering",
+        "audition"
+      ],
+      "rule": "A prefix is refused by the maker rule when the MAJORITY of its sampled titles match this list, whatever its maker's-practice and art-referent scores. Majority, not presence: `sound design` is a technology term and a single `audio` title in a film prefix must not refuse it."
+    }
+  },
+  "venture_definition": {
+    "ruling": "BRINK'S RULING, 2026-09-15. It replaces Half A, Half B, the ordered test, the equipped/informed pivot, the register clause, the medium rule, the addressee clause and the employment branch with one distinction:\n\n  DOES THE COURSE TEACH HOW TO MAKE JOBS, OR HOW TO GET ONE?\n\nVENTURE: teaching entrepreneurship or entrepreneurial skills to art students, AT ANY LEVEL. Introductory, survey, theory, case study, ecosystem, economics of the field — you cannot run your own practice without first learning what one is, so the introductory and theoretical courses count. The enterprise need not be the student's own: manufacturer-level, community and social entrepreneurship, freelance and self-production all count.\n\nNOT VENTURE: teaching how a broader marketplace operates. The Business of Hollywood, Business of Media, Business of Animation — describing studios, agents and industry structure is not teaching entrepreneurship.\n\nNOT VENTURE: arts administration. It teaches people how to get a job, not how to make jobs. AADM, AMGT and ARTM stay unseated and the maker rule's outcome is unchanged, now with a plainer reason than CIP consistency.\n\nSCOPE, NOT CLASSIFICATION: engineering entrepreneurship counts if it sits in the art unit and does not if engineering owns it. The art-unit filter already decides that and the venture axis says nothing about it.",
+    "what_it_reverses": "HALF A IS REVERSED. EMA 365, 375, 520, 530 and 535 — arts economies, ecosystem models, entrepreneurship theory — are VENTURE under this rule. NC State returns to 11, which is where v0.29 had it before any of this began. Seven wordings were spent excluding courses this ruling restores.",
+    "shipped_text_predates_the_ruling": "STATED PLAINLY BECAUSE IT MATTERS FOR HOW THE AXIS IS READ: if the re-grade sends us back to v0.29, the classifier text in the rendered block PREDATES this ruling and was never written to implement it. The ruling is the axis's published definition; v0.29's text is the instruction that happens to implement it best, measured against a 158-course oracle re-marked to the ruling.\n\nIts known defect is the marketplace branch — v0.29 admits industry surveys, which this ruling excludes. If the re-grade confirms that, the defect is published with the census: the courses are named, a reader can check each against the definition, and the disagreements are visible rather than buried in a rate. That is the whole argument for a census and it is why shipping an untuned wording is defensible here and would not be for a rank.",
+    "consequence_for_the_claim": "Brink's point, and it is the most important line in the ruling. '1.3% of art-unit coursework is building a creative enterprise' was computed under an instruction that excluded introductory and theoretical entrepreneurship. Counting those in RAISES the number and makes the finding harder to attack: art schools teach very little entrepreneurship OF ANY KIND, AT ANY LEVEL — which a dean cannot rebut by pointing at an intro course we did not count.\n\nEvery published venture figure computed before this ruling is superseded, including the ones in the analysis package. Recompute and reissue rather than annotate."
+  },
+  "scope_questions": {
+    "beyond_the_bottega_subjects": "Brink asks whether art education, art history and art theory should become categories of their own rather than exclusions, since the index already publishes practice, which is not a bottega virtue.\n\nTHE COMPOSITION PASS ALREADY DOES THIS, and the pipeline is right that adding axes would duplicate it at the cost of a new classifier, a new signature and a corpus re-run. Twelve exhaustive buckets summing to 100% produced the finding the whole project rests on: 73.4% of art-unit coursework is making and studying art — studio 46.1%, history and theory 27.4% — against 1.3% building an enterprise. History, theory and pedagogy are already counted, named and published. They are not axes because an axis asserts a comparison between schools and a bucket asserts a share of a curriculum, and these are shares.\n\nOne correction to the pipeline's framing: art education is NOT the missing bucket. `pedagogy` has been in the taxonomy since v0.6. What the exclusion changes is its scope, not its existence — see composition.pedagogy_after_the_exclusion.\n\nRECOMPUTE COMPOSITION BEFORE PUBLISHING ANY OF ITS FIGURES. 1.3% predates the venture ruling and the corpus has grown; the composition signature has never moved, so it is free."
+  },
+  "instrument_self_checks": "TWO GAPS FOUND ON 2026-09-16, both recorded because neither was anybody's assignment.\n\nNOTHING AUDITS THE ART UNIT AT SCHOOLS WE ALREADY PUBLISH. gaps.py audits coverage against the roster; no equivalent asks whether the unit we drew is correct. UT Arlington is ranked on technology and practice with its 208-course ART prefix outside its art unit, and it was found by a fuzzy name match misfiring in an unrelated diagnostic. An art-unit audit belongs in the standing checks beside the integrity check, and it must run at every ranked school before any table ships.\n\nA TITLE-BASED AUDIT ALWAYS OVER-FLAGS, and this is now a rule for reading any scan. The subject pass judges prefixes with programme context no lexicon can see: Colorado State's IDEA reads 0.88 art referent on titles like 'Design Your Life with Social Impact' and is housed in the College of Health and Human Sciences, not in art. The subject pass was right and the audit was wrong. A prefix appearing on a title scan is EVIDENCE IT IS WORTH READING, never evidence it is misjudged. The same caution runs in reverse: a scan that does not know about the maker rule flagged George Mason AMGT and Colorado State LEAP as defects when both are arts management, deliberately excluded.\n\nTHIRD GAP, and this one is mine. A subject-state change must be SCORED AND DIFFED AGAINST THE PUBLISHED RUN BEFORE IT BECOMES THE WORKING BASE. v0.43 became the base for three days of diagnosis without that step, and the diagnosis then attributed to stage 7 a defect stage 7 never had.\n\nI RULED ON THAT ATTRIBUTION WITHOUT ASKING WHICH STATE WAS MEASURED. v0.44 said stage 7 could not ship because architecture sat inside RISD's and SAIC's art units; under the published subjects it did not, at RISD, SAIC ARCH, Penn, Oregon, Auburn, Kent, Hawaii, RPI or Tennessee. Stage 7's real architecture defect was three prefixes — Berkeley ENVDES, Boulder ENVD, SAIC AIADO. I blocked publication on a defect that did not exist in the published data, and the $24 re-roll followed from it.\n\nTHE QUESTION I SHOULD HAVE ASKED, and which now belongs on every diagnosis: IS THIS MEASURED AGAINST THE PUBLISHED RUN OR AGAINST THE WORKING BASE?\n\nTHE SUBJECT CLASSIFIER'S HELD-OUT TEST, 2026-09-21. On 75 institutions it had never seen, v0.46 admitted architecture or landscape into the art unit four times — Clemson LARC, Georgia LAND, Miami ARC, Rhode Island LAR — and excluded no design prefix. ONE DIRECTION ONLY. That is a characterisable bias, not noise: the v0.45 wording was written to stop the design over-removal and it succeeded, at the cost of under-removing architecture. The hand-applied board stays as a required step, stated in Methods §3 as a measured limitation of the classifier. A blind failure in one known direction, caught and corrected by a documented board, is a better result for the paper than a pass would have been — it is the negative result the review said reviewers look for and rarely see.\n\nTHE HELD-OUT CLAIM, CORRECTED 2026-09-22. v0.47 said the subject classifier failed blind in ONE direction only. That was wrong, and I wrote it. On 75 unseen schools and 7,919 prefixes it erred in BOTH directions: four built-environment admissions — Clemson LARC, UGA LAND, URI LAR, UAGM DSGN, all corrected by the board — and three in-scope exclusions at published schools, the largest ASU's 101-course art history department. Miami ARC was not a held-out school and leaves the count.\n\nPUBLISH IT AS THE PIPELINE WORDED IT: 'on 75 unseen schools (7,919 prefixes) the subject classifier erred in both directions — four built-environment admissions, all corrected by the board, and three in-scope exclusions at published schools, the largest a 101-course art history department. The board and the pre-publication scans are required steps.'\n\nThe 'one direction' framing was attractive because a characterisable bias is a better story than noise. It was also a claim made on four rows without asking what the scan would find on the other side. That is the same shape as every title-read error in this project, made about the instrument instead of a course.\n\nTWO OF MY OWN FILM-BOARD RULINGS FALL, and both for the same reason: I ruled on a column without reading the titles beside it. UCSC FMST was drafted as Film & Digital Media and I confirmed it; its samples read 'Advanced Topics in Feminist Theory'. Berkeley MEDIAS I admitted on its housing column, 'Film & Media', with 'Cultural History of Advertising' and 'Cybernetics and Cybercultures' on the same row — CIP 09, and CIP decides before housing is reached. My own film ruling says so. The pipeline disclosed its own draft errors on FI, FMST and MEDI first, which is how these two surfaced at all.",
+  "scope_gates": {
+    "ruling": "GATE THE TWO INCLUDE RULES. Reversed from v0.41, which ruled pay $36.72 — the principle there was right and the cost-benefit was computed against a measurement that has since been retracted.\n\nThe pipeline reported 109 ranked schools affected and 88 moving 10% or more; its design regex was matching Machine Design, Structural Design and Reinforced Concrete Design, so the top of that list was civil and mechanical engineering, and it counted ARCH and LARC throughout. Same class as `craft` matching Aircraft. The real scope is the one in my own adjudication, because it came from reading titles: six design prefixes at 213 courses, eleven fashion prefixes at ~300, about 500 courses across fifteen schools.\n\nAt that size $36.72 is disproportionate, and Brink's rule decides it: the spend would be worth it if a large share of the published 144 were inaccurate, and they are not.\n\nMY OBJECTION IS ANSWERED, NOT OVERRIDDEN. I ruled against gates because a gate can silently exclude the prefix a rule was written for — UCSB's film department was never asked. The pipeline's step 2 removes the silence: publish the list of every prefix the hints exclude and confirm DePaul DES, Minnesota DES and DESI, and Marist FASH are inside BEFORE anything runs. That is free, and it is exactly the check nobody ran when film's gate was written.",
+    "hints_must_be_published": "STANDING REQUIREMENT, whatever is decided about cost. If a rule only ever sees prefixes matching a keyword, THAT KEYWORD IS PART OF THE RULE and must be declared in the rubric beside the rule's text, never only in SHAPE_HINTS. A provost reproducing our method cannot see a gate that lives in code. film_media_in and art_education_out are currently gated on hints they acquired by accident — art_education_out picked up `education` because its prose happens to contain the word — and both should have those hints written into the rubric or removed.\n\nAND NOW IT IS LOAD-BEARING. `design` and `fashion` are being added deliberately, so both must appear in the rubric beside their rules with the exclusion list they produce, not only in SHAPE_HINTS. Send the list from step 2 and I will write both into v0.43. Until then these two rules are published with a gate a reader cannot see, which is the condition I ruled against.",
+    "asymmetry_recorded": "Two facts about run_classify_scope that are invisible from the rubric and shape every price and every reach. EXCLUDE rules have no shape gate at all — shape_matches applies only when direction is include — so every exclude asks all 1,308 art prefixes regardless of its subject, and museum_studies_out asks the same 1,301 questions as architecture_out. That is structural, cheap at $1.30 each, and good for correctness. INCLUDE rules are gated only if their text contains a SHAPE_HINTS key, of which there are exactly two, so an include rule with no shape asks all 18,356 out-prefixes. Both belong in the methodology, because a reader otherwise cannot tell why one rule cost nothing and another cost eighteen dollars.",
+    "pre_commitment": "STATED BEFORE THE RUN so an over-admission is visible rather than rationalised. design_schools_in and fashion_design_in each ask 18,356 prefixes with a majority test. I expect them to admit on the order of six to twenty prefixes between them — the six design prefixes and four fashion prefixes named in the adjudication, plus a tail. IF EITHER RETURNS MORE THAN FORTY, STOP AND READ BEFORE APPLYING. arts_business_under_education_in admitted 155 and its damage was only visible because someone read the list.\n\nAnd the Minnesota housing check still stands: design_schools_in will ask Minnesota's DES, DESI and ADES and may admit them. Apply the housing check to its admissions BEFORE accepting them, per the IDEA principle — the rule cannot see which college a prefix sits in.",
+    "film_veto": "THIRTY PERCENT, and drop `dissertation` entirely rather than soften it.\n\nThe threshold is measured past its knee: 69 prefixes readmitted at 20%, 78 at 30%, 81 at 40%, 82 at 50%, flat above 30. UCSB FAMST — killed by a single `theatre` title among ten — gets asked. Binghamton THEA and Oregon JCOM stay vetoed on saturated samples, which is the veto doing its job.\n\nThe two-keyword rule stays exactly as it is. Lowering it to one would ask 891 prefixes and 48,666 courses including NYU LAW and Penn ENGL, which is a different instrument.\n\n`dissertation` killed 34 prefixes including UCSB CH and Binghamton ENG. It is a graduate-catalogue word sitting in a list of family words and it has no business deciding whether a prefix is film. Remove it; do not weight it.",
+    "allow_new_followup": "Approved for steps 1 through 4. The guard refusing follow-ups whose signature is not in the subject cache was built after makers_practice_in and has now done its job twice: it caught eight cold signatures and made $44.52 visible before it was spent, which is how the retracted measurement came to be checked at all.",
+    "gates_cost_discovery_not_coverage": "WHAT A GATE ACTUALLY COSTS, stated because 'the known-good prefixes survive' does not address it. A `design` hint finds prefixes with `design` in their titles. It will never find a design department named VIZ, MAKE, CRAFT or FORM. By construction the known-good list cannot test this, because those prefixes were found by a title scan using the same words.\n\nSo a gated rule codifies what we already found and automates it for schools arriving later — real value, and the reason these stay rules rather than reverting to the register the maker rule was built to retire. It does not discover.\n\nTHE ARTSCAN IS THE DISCOVERY INSTRUMENT AND IS NOW A STANDING CHECK. It scans every out-prefix by art-referent ratio rather than by rule keyword, it is free, and it is what found these prefixes in the first place. Re-run it whenever schools are added and whenever a scope family changes, and read its output as evidence worth reading rather than as a verdict. Gating the rules is only defensible because this check exists; if it lapses, the gates become the blind spot I objected to.",
+    "approved_sequence": "1. $6.50 — the five exclude rules as written. No gate, structural, and an exclude rule's reach is corpus-wide by construction.\n2. $0 — add `design` and `fashion` to SHAPE_HINTS, PUBLISH THE EXCLUSION LIST, confirm the known-good prefixes are inside. Nothing runs until that list has been read.\n3. ~$3 — the two include rules, gated. Pre-commitment from v0.41 still holds: if either admits more than forty prefixes, stop and read before applying, and the Minnesota housing check applies to whatever design_schools_in admits.\n4. $0 — film veto to 30% proportional, `dissertation` removed from the veto list.\n5. ~$15 — coverage tiers 1 and 2, twenty schools. Approved: it takes the US News top 100 from 53 to roughly 73 ranked and fixes UCSB's 630-course film department, which is the single largest known defect in the corpus. Best value in the queue.\n\nAbout $25 in total, against $36.72 for two ungated rules alone.",
+    "published_hints": {
+      "note": "These gates are part of the rules they gate and are published here, not only in SHAPE_HINTS. Both at need=1 with the 30% proportional veto. design_schools_in asks 3,688 prefixes and fashion_design_in asks 250, against 18,356 each ungated: $3.94 total, and all nine known-good prefixes pass.",
+      "design": [
+        "design",
+        "typography",
+        "visual communication",
+        "industrial design",
+        "human centered",
+        "user experience",
+        "interaction",
+        "graphic",
+        "branding",
+        "product design",
+        "service design",
+        "wayfinding",
+        "studio",
+        "prototyp",
+        "craft"
+      ],
+      "fashion": [
+        "fashion",
+        "apparel",
+        "textile",
+        "pattern",
+        "drap",
+        "garment",
+        "sewn",
+        "knitwear",
+        "millinery",
+        "couture",
+        "merchandis",
+        "fibers",
+        "fiber",
+        "dress"
+      ],
+      "two_changes_to_the_proposal": "`craft` MUST BE WORD-BOUNDED. As a bare substring it matches Aircraft, Spacecraft and Statecraft — the artefact already recorded in maker_rule.artefact_record, where it gave Utah State's Unmanned Aircraft Systems an art referent of 0.80. Bounded it is worth keeping: craft prefixes are CIP 50.02 and genuinely in scope.\n\n`making` IS DROPPED from the design list. It matches Decision Making, which is ubiquitous in management and business catalogues, and Policymaking. It is load-bearing for none of the nine known-good prefixes — filmmaking belongs to the film gate, not this one — so it buys nothing and reaches into a family we exclude.\n\n`studio` is broad and is KEPT deliberately. It will ask recording, dance and television studio prefixes, which the majority test then declines. Asking is cheap and it is the one word in either list that might reach a design department named something other than design.",
+      "threshold_is_not_a_constant": "The pipeline's point, and it belongs in the methodology rather than a code comment: film keeps TWO distinct keywords and design and fashion take ONE, because THE NUMBER IS A PROPERTY OF HOW COMMON A FAMILY'S VOCABULARY IS OUTSIDE THE FAMILY, not a constant to be applied evenly. Film, video and editing are common far outside film — lowering film to one would ask 891 prefixes and 48,666 courses. `design` and `fashion` are narrower words. Any future gate sets its own threshold on the same test and publishes the reasoning.",
+      "blind_spot": "PUBLISHED because a gate's cost is what it never asks. 64 prefixes and 1,575 courses, 53 of them at ranked schools, are caught by neither hint.\n\nDePaul DES sat at the top of that list at two keywords and drops out at one, which is the list doing its job — it is the instrument that made the threshold decision checkable rather than assumed. FIT's FI, 67 courses of film, is in the blind spot and no design hint would ever reach it; it belongs to the film gate and to artscan.\n\nThis list is re-derived whenever a hint changes, and artscan remains the standing discovery check that covers what no hint can.",
+      "veto_confirmed_three_ways": "The 30% proportional veto is now confirmed on three independent cases found by three different routes: UCSB FAMST from the film-rule audit, DePaul DES from the gate threshold test, and DePaul HCD which recovered on the veto change alone with no keyword change — killed by a single theatre title among ten. Same defect, three discoveries, none of which would have found the others."
+    },
+    "architecture_ruling": "OPTION 3. Architecture is decided in the subject pass, not by a follow-up. This costs a full subject re-roll — 27,948 verdicts, and every follow-up re-run behind it — and it is the right call for three reasons.\n\nONE: THE PROHIBITION AGAINST IT IS OBSOLETE. v0.12 forbade editing subject_scope because re-keying every prefix was 'the Loyola Marymount instability at corpus scale'. That justification has since been measured away: sampling is seeded per (unitid, prefix), the two-run variance test returned 0 of 20 differing, and the publication bar — the same corpus classified twice produces identical art-subject sets — is met rather than assumed. A re-roll is now reproducible. The rule outlived its reason and is retired with it.\n\nTWO: EVERY CHEAPER FIX IS ANOTHER VOCABULARY GUESS. Gating architecture_out on an architecture shape has the same blind spot that already defeats the include-side family guard: Auburn's and Penn's ARCH read Studio I, Building Technology, Site Analysis and score below 30%. A gate built from those words would not ask them either, so the cheap fix repairs the design over-removal and can worsen the architecture under-removal. Six defects this week came from guesses about title vocabulary.\n\nTHREE: IT REMOVES THE CLASS, NOT THE INSTANCE. An exclude and an include fighting over the same prefix, with the errors partly cancelling at +1,155 courses so the net looked plausible, is an ordering defect. Deciding architecture once, in the pass that has context, means no ordering question exists to get wrong.",
+    "why_this_blocks_publication": "STAGE 7 CANNOT SHIP WITH THIS AS A FOOTNOTE, and the design-prefix removal is the smaller half.\n\ndesign_schools_in is re-admitting ARCH and LAND at Auburn, ARCH/LARP at Penn, ARCH/LDAR at RISD, ARCH/LA at Oregon, and ARCH at Kent, Hawaii, RPI, SAIC, Tennessee and Colorado Denver. Architecture is back inside the art unit at ten schools including RISD and SAIC — the two most visible art colleges in the index — which inflates their denominators and deflates every share they publish.\n\nThat is not an incompleteness to disclose. It is a NAMED RULING NOT IN EFFECT: v0.11 removed architecture for a stated reason and the published data does not reflect it at the schools where it matters most. Disclosing it would mean publishing a methodology that describes an instrument we are not running.\n\nThe design half IS a disclosable limitation and should be disclosed whatever happens next: a set of design prefixes have sat outside art units since v0.16, making some denominators smaller and some shares larger, and it was invisible because a later include rule put most of them back.",
+    "what_the_re_roll_needs": "Not just money. After the subject pass re-rolls, EVERY follow-up's input changes — they are cached on their own text but they ask about whichever prefixes are currently judged art. So the full sequence re-runs, and the art-unit audit from v0.38 must run at every ranked school before any table ships. Price the whole chain before starting it, and if it is materially above ~$50, say so and I will reconsider against option 1 plus a hard ordering guarantee.\n\nExpect denominators to move at the ten architecture schools and the fourteen design prefixes, and expect a scorediff against stage 7 that is larger than any previous one. That is the correction arriving, not a new defect.",
+    "v44_reversal": "v0.44 REMOVED ARCHITECTURE CORRECTLY AT ALL TEN SCHOOLS AND TOOK 1,987 COURSES OF DESIGN WITH IT — ARDS, DESN, PRES, AIADO, PGAR, PUAD, KGAR, AAD, PSLD, LDE — while design_schools_in found 5 prefixes to ask about instead of 3,085 and added nothing.\n\nMY WORDING, AND IT FAILED THE WAY I SAID CHEAPER FIXES WOULD. I ruled for option 3 partly because 'every cheaper fix is another vocabulary guess'. Option 3 was a vocabulary guess too — just one layer earlier, where nothing downstream can correct it. That is the whole lesson of this round and it is worse than the defect it replaced.\n\nThe old wording named CIP 04 abstractly, explained the degree-count reasoning at length, and used the word design five times inside an exclusion. A classifier reading it over a prefix called Advanced Design Studies had every reason to map design to built environment to CIP 04. v0.45 names what the excluded programmes DESIGN — buildings, sites, landscapes, urban form — states the included design families explicitly, and names the four prefixes that were wrongly taken.",
+    "what_belongs_in_the_subject_pass": "STRUCTURAL RULE, learned at $24. A subject_scope exclusion is applied by the same classifier that decides everything else, with NO SHAPE GATE, NO PER-PREFIX GUARD AND NOTHING DOWNSTREAM THAT CAN CORRECT IT. Music, theatre, dance and the trades belong there because they are unambiguous by name.\n\nA BOUNDARY JUDGEMENT DOES NOT BELONG THERE unless it can be stated from both sides in terms a reader could apply. Architecture-versus-design is a boundary judgement; v0.45 keeps it in the subject pass only because the boundary can be named concretely — what is designed, and for what. If the micro-test below fails, it moves back to a gated follow-up where a later rule can correct it, and the ordering problem is solved with a hard guarantee instead.",
+    "micro_test_before_the_re_roll": "DO NOT SPEND $24 ON A WORDING AGAIN. Before any re-roll, ask the new subject prompt about the twenty-four prefixes already known to be decisive — the ten architecture schools' ARCH and LARC/LDAR/LA/LAND prefixes, plus ARDS, DESN, PRES, AIADO, PGAR, PUAD, KGAR, AAD, PSLD, LDE, UXR, DMGT. Pennies, minutes.\n\nPASS CONDITION, fixed before the run: every architecture and landscape prefix OUT, every design prefix IN. Anything else and the wording goes back to the bench. This is the five-cent venture loop applied to scope, and it is the check that was missing when v0.44 cost $24 to discover a wording error."
+  },
+  "art_unit_definition": {
+    "ruling": "BRINK, 2026-09-17. This replaces 'family exclusions apply first and absolutely', which named an order without a mechanism and could not settle a prefix CIP does not reach.\n\n  THE ART UNIT IS THE INSTITUTION'S ART AND DESIGN TEACHING. CIP DECIDES FIRST: 04 OUT, 50.04 IN. WHERE CIP DOES NOT DECIDE, THE HOUSING UNIT DOES — A PREFIX IS IN ONLY WHEN THE INSTITUTION OFFERS IT THROUGH ITS ART OR DESIGN UNIT. PERFORMING ARTS ARE OUT, AS A SEPARATE SCHOOL, THE SAME WAY ARCHITECTURE IS.\n\nTwo stages, in order, and the second is what every title-based rule in this rubric has been guessing at. Housing is a fact about the institution, checkable on its own website, and it is the answer to the question every scan has raised and none could settle.",
+    "reverses_my_artscan_rulings": "THREE OF MY OWN RULINGS FALL, and they fall for the reason I wrote into the rubric and then did not apply to myself. The IDEA principle says a title scan is evidence worth reading, never evidence a prefix is misjudged — and I ruled these three from titles.\n\nDePaul DES — Rule 6's headline, 100 courses, 'DRAWING FOR DESIGNERS I/II/III'. It is the Theatre School's design programme, CIP 50.05. My content read was right and my housing was absent.\nDePaul HCD — design research, housed in a computing college, CIP 11. OUT.\nUT Arlington CTEC — UX content, a Communication department, CIP 09. OUT.\nSCAD PRES — I had already ruled it out on CIP 04.06; the board confirms it on housing, the School of Building Arts alongside SCAD's M.Arch.\n\nInterior design inside an architecture school stays IN on CIP, which is the ruling's first stage doing its job before housing is consulted.",
+    "the_four_families": "Film and media, fashion and apparel, art education, and the studio/design prefixes removed by the one-token defect are ruled the same way, by hand, as a second board. FILM IS URGENT: v0.43 has NYU's Tisch prefixes OUT and UCSB FAMST IN at 630 courses, nearly doubling UCSB's art unit. An index with Tisch out and UCSB film studies in cannot be defended to either school.\n\nTHE BOARD FILE NEEDS, PER PREFIX: the CIP code, THE HOUSING UNIT AS THE INSTITUTION NAMES IT, the course count and a source URL. I will not rule these from titles — that is the error that just cost three of my own rulings. UCSB FAMST is the case to watch: film production is CIP 50.06 and in on stage one, but if Film and Media Studies is housed in Humanities rather than in an art unit, stage two takes it out, and 630 courses is the largest single denominator in play.",
+    "supersedes": "This ruling supersedes, wherever they conflict: post_classification_scope.how's 'family exclusions apply first and absolutely'; the housing caveats attached to design_schools_in and to Minnesota; and scope_gates.what_belongs_in_the_subject_pass, which asked whether a boundary could be stated from both sides. Housing settles the boundary and no vocabulary has to.",
+    "film_and_media": "FILM AND MEDIA FOLLOW THE ART-UNIT RULE, AND CIP DECIDES MORE OF IT THAN THE HOUSING PROPOSAL ASSUMED.\n\n  CIP FIRST. 50.06 IS IN — film and video production, cinematography, animation, AND film, cinema and media studies (50.0601). 09 IS OUT — journalism, mass communication, broadcasting, public relations, advertising as communication. WHERE A PREFIX'S CIP DOES NOT DECIDE — a 'media' prefix that could be 50.06 or 09 — HOUSING DOES: offered through a film school, an arts college or an art and design unit, IN; offered through a journalism or communication college, OUT.\n\nTHE CONSEQUENCE THE HOUSING PROPOSAL WOULD HAVE REVERSED: film STUDIES is in on CIP 50.0601 the same way art history is in on 50.0703. Scholarship about film belongs to the art unit exactly as scholarship about painting does, and the roster's scope has included all of 50.06 since the first day. So UCSB FAMST, 630 courses in Letters and Science, is IN — and yes, it doubles UCSB's art unit, because UCSB has a large film studies department and it counts. Excluding it because it sits in a humanities division would apply a housing test where CIP already answered, which the rule forbids.\n\nWHAT THIS FIXES: USC Cinematic Arts was EXCLUDED. It is a film school, CIP 50.06, the most visible one in the country, and its exclusion is indefensible under any reading. Syracuse Newhouse stays OUT as a journalism college, CIP 09. TCU FTDM and Kent FDM go to the board with their CIP and housing; I will not guess them.\n\nBOARD FILE, ONE ROW PER PREFIX: CIP as the institution reports the programme, housing unit as the institution names it, course count, source URL. FAMST is row one. Every 'media' prefix gets both columns filled before it is ruled, because 'media' is the word that carries the ambiguity.",
+    "ux_hci_outside_design": "UX and HCI in engineering or communication colleges are OUT on housing, consistent with DePaul HCD and UTA CTEC: UW HCDE and HCID (College of Engineering), MSU UX (Communication Arts and Sciences). CIP 11 or 09 in each case, so CIP decides most of them before housing is reached.",
+    "uw_arth": "UW ARTH is IN. It sits in the School of Art + Art History + Design — the art unit by the institution's own name — and art history is CIP 50.0703. One row, no argument."
+  },
+  "delivery_rulings": {
+    "new_school_nphg_ncic": "The New School NPHG and NCIC are OUT as delivery, under the continuing-education exclusion that has stood since v0.8 — 'excluded whatever their subject.'\n\nNPHG: ~90 room-booking rows removed as a harvest artefact; the remaining ~92 are capacity-limited photography workshops — 'Limited to 14. This workshop is for serious students who have honed their craft.' NCIC: software-application training, every title listed twice under a 0xxx and a 1xxx number, no descriptions on any record inspected.\n\nTHE EVIDENCE IS A PROFILE, NOT A PROOF, and the ruling says so. Both sit in The New School's main Coursedog catalogue, and a web search did not settle credit status. But the art unit is the teaching a degree programme offers its degree students, and capacity-limited workshops addressed to anyone who has honed their craft, and Adobe application classes offered twice under parallel numbering, are the shape of continuing education in every signal available. Neither direction flatters the index — including them lowers The New School's percentages, excluding them raises them — so the call is made on the construct alone.\n\nREVERSIBLE ON EVIDENCE: if The New School confirms either prefix carries degree credit, it comes back in and the changelog says why. NCIC's records are already withheld from every numerator for want of descriptions, so the only effect of this ruling is on the denominator."
+  },
+  "industry_role_board": {
+    "what": "A hand-ruled correction list applied to the VENTURE CENSUS, the same instrument as the architecture and film boards. Brink's 16 October ruling decides every row: training for a role the student would hold inside someone else's production apparatus is practice; producing the student's own independent work, or starting and running the student's own company, is venture.",
+    "both_directions": "The board rules BOTH WAYS. Remove from venture: producer, showrunner, agent, development and distribution-role training that v0.51 labelled venture. Add to venture: courses whose subject is the student's own production company or own independent work that v0.51 missed — the ruling names 'Producing Indie Films' and 'How to Start and Run a Production Company' as venture, and a board that only removes would turn a two-sided ruling into a one-sided cut.",
+    "candidate_finder_is_noisy": "The finder is a candidate list, never a verdict, and three of its words will over-flag: 'development' matches professional, curriculum and product development; 'distribution' matches self-distribution, which is the audience axis and squarely art-entrepreneurship; 'producing' matches printmaking and ceramics production. Every row is read against its description. Each row carries v0.51 and v0.53 verdicts as evidence, and agreement between them is not a reason to skip the read — GT 2104 is the proof.",
+    "practice_is_not_hand_adjusted": "The board corrects the venture census only. Practice is a RANKED, classifier-driven axis, and hand-adding producer courses to it would mix two instruments inside a rank. A producer course the board removes from venture keeps whatever other axes v0.51 gave it. Where v0.51 gave it nothing, practice at that film school is undercounted by that course, and the paper says so: a small, named, directional undercount, concentrated at film programmes.",
+    "status": "APPROVED BY BRINK, 2026-10-16. Published as industry_role_board.csv. HOLD FOR STAGE 17 — not applied. 457 candidates read: 52 REMOVE, 2 ADD, 403 KEEP.",
+    "the_test": "ONE QUESTION DECIDED EVERY ROW: IS THE COURSE'S SUBJECT A ROLE OR AN ENTERPRISE?\n\nA ROLE is a job the student would hold inside someone else's production apparatus — producer, showrunner, agent, development executive, distributor — or a survey of how that apparatus works. It leaves venture. An ENTERPRISE is the student financing, selling, distributing or running their own film, project or company. It stays venture, whatever the title says. 'Selling Your Indie Film', 'Finding Money', 'Creative Crowdfunding' and 'Producing the Independent Film' stay; 'The Role of the Producer', 'Practicum in Producing' and 'Producer's Craft' leave.\n\nThe description decides, not the title. CIN 380 'Producing Independent Cinema' matches Brink's own venture example and is NOT added: its text closes on preparing students 'to enter a number of career pathways in the indie film business'. GFMTV GT 2104 'The Business of Creative Producing' IS added: it teaches students to create a strategic plan to finance and distribute films, and the addressee clause discounts who it is written for, not what it has them do.",
+    "where_removals_land": "Removal from venture is not assignment to practice. Of the 52 removals, 31 are industry-role training and land on PRACTICE under the 16 October ruling; 21 are industry surveys — business of film, economics of the industry, entertainment law — and land on NEITHER, as history and theory. Counting all 52 as practice would overstate the practice undercount by two-thirds.",
+    "borderline_direction": "Twelve rows are kept as BORDERLINE: enterprise skills — business plans, investors, independent financing — without an explicit own-project frame. The ruling removes role training; it does not require proof of ownership. Tipping close calls toward removal would be 'when borderline, exclude' again, pointed at the index's own headline. The count is published.",
+    "practice_gap": "PRACTICE IS NOT HAND-ADJUSTED, so where a removed course is industry-role training and v0.51 gave it no practice verdict, that school's practice count is understated. 31 courses at 18 schools, 16 of them ranked on practice. Named in practice_gap_schools.csv. The undercount is by the number of courses shown, not uniformly by one — UCLA by five, Columbia College Chicago and UNCSA by three. Small, named, directional, and concentrated at film programmes, which is how the paper states it.",
+    "oracle_gt_2104": "The analysis chat's oracle mark on GFMTV GT 2104 changes from practice to VENTURE, with both readings recorded: practice, as training for emerging producers in how films get made; venture, as the student building a financing and distribution plan. Two independent wordings returned venture before any person did."
+  },
+  "self_definition": {
+    "ruling": "BRINK, 17 OCTOBER. A course whose subject is critique of student work — a crit seminar, a group or graduate critique, a video critique — is not self. Self is the science of creativity, the optimization of one's own creative process, and the management of one's creative self, taken directly as the course's subject. A critique course counts only when its description explicitly takes the creative process, or critique itself as a method of sustaining a practice, as its subject.",
+    "reverses_my_v051_addition": "THIS REVERSES MY OWN LEXICON ADDITION. v0.51 added the critique family to the self lexicon on the argument that Temple's CRITIQUE AND CRITICAL DISCOURSE and Pratt's MODES OF CRITIQUE were already published self courses. It had no oracle behind it. The full-population coding supplied one: inside the critique family the classifier's precision is 0.27; outside it, 0.89. Temple ART 8004 and 8005 are removed by the board — their subject is critical dialogue about the students' work. Pratt's Modes of Critique stays, because its subject is the role of critique in a practice. I cited both as the same kind of course; the text says they are not.",
+    "rendered_text_unchanged": "THE RENDERED SELF TEXT IS NOT EDITED, and the analysis chat's ask to remove the critique family from the includes is answered this way deliberately. The includes line reads 'critique taught explicitly as a method', which is what the ruling keeps. The defect was not that sentence; it was the v0.51 lexicon pulling every crit seminar into stage two, where the classifier accepted them. Editing the rendered text would re-key the whole corpus at ~$109 inside a correction release, and the v0.31 and v0.52 failures are the record of what a one-clause change does to an axis. The lexicon is also left alone: shrinking it would silently drop previously shortlisted courses from the census, an uncontrolled change of its own. THE BOARD IS THE CORRECTION, extended to new schools by a person reading, as the industry-role board is. The restated definition above is the published one; the rendered text predates it and implements it well outside the critique family, which is what the 0.89 says.",
+    "the_board": "self_critique_board.csv: 99 rows reviewed — all 77 critique-titled, plus the 22 non-critique rows the coders' majority rejected. 23 critique-titled kept, 54 removed; 3 non-critique kept (Changing Creativity, Creativity in Design, Love Making), 19 removed. The 175 majority-confirmed non-critique rows are untouched. Self 274 to 201.",
+    "overrides": "NINE ROWS OVERRIDE THE CODERS' MAJORITY, seven toward keeping and two toward removing — so the overrides lean AGAINST the index's absence headline, not toward it. Four of the nine are consistency rulings: FNAR 7010-7040 and GRST 7002-7004 are two sequences with identical descriptions that the coders marked differently from course to course. Identical texts get identical rulings, and that inconsistency on identical text is itself a reliability finding worth a sentence in the paper. The others are texts explicit about critique as method or the study of creativity: The Art of Critique, Feedback: Critical Evaluation Methods, Changing Creativity, Creativity in Design, Love Making."
+  }
+}
