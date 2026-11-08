@@ -1,0 +1,38 @@
+{
+ "study": "bottega-index-reliability-round2",
+ "set": "p_out",
+ "type": "out",
+ "coder": "R2",
+ "started": "2026-10-30T00:22:22.182Z",
+ "exported": "2026-10-30T00:27:26.185Z",
+ "n": 3,
+ "completed": 3,
+ "order": [
+  "QO01",
+  "QO03",
+  "QO02"
+ ],
+ "answers": {
+  "QO01": {
+   "ent": "Y",
+   "orient": "G",
+   "restr": "S",
+   "ms": 187316,
+   "at": "2026-10-30T00:25:29.499Z"
+  },
+  "QO03": {
+   "ent": "Y",
+   "orient": "G",
+   "restr": "R",
+   "ms": 66169,
+   "at": "2026-10-30T00:26:35.668Z"
+  },
+  "QO02": {
+   "ent": "Y",
+   "orient": "G",
+   "restr": "S",
+   "ms": 45746,
+   "at": "2026-10-30T00:27:21.414Z"
+  }
+ }
+}

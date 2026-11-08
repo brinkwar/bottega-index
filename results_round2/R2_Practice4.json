@@ -1,0 +1,32 @@
+{
+ "study": "bottega-index-reliability-round2",
+ "set": "p_prefix",
+ "type": "prefix",
+ "coder": "R2",
+ "started": "2026-10-30T00:29:26.251Z",
+ "exported": "2026-10-30T00:31:03.534Z",
+ "n": 3,
+ "completed": 3,
+ "order": [
+  "QP02",
+  "QP03",
+  "QP01"
+ ],
+ "answers": {
+  "QP02": {
+   "in": "N",
+   "ms": 38031,
+   "at": "2026-10-30T00:30:04.282Z"
+  },
+  "QP03": {
+   "in": "N",
+   "ms": 21093,
+   "at": "2026-10-30T00:30:25.375Z"
+  },
+  "QP01": {
+   "in": "N",
+   "ms": 36032,
+   "at": "2026-10-30T00:31:01.408Z"
+  }
+ }
+}
