@@ -1,0 +1,24 @@
+{
+ "amendment": 4,
+ "drawn": "2026-11-08",
+ "stage": "17b",
+ "signature": "32a672745485881f",
+ "pool_definition": "round 2 T2a haiku_venture: described art-unit records at the 231 ranked institutions, never coded in round 1 or S5, production raw verdict marks no axis, Haiku 4.5 marks venture and neither self nor audience; excluding courses drawn into T1, T5 or T6 before T2a",
+ "stratum_records": 317,
+ "round2_logged_pool": 317,
+ "drawn_in_round2_T2a": 60,
+ "in_other_round2_sets": 1,
+ "remaining_records": 256,
+ "remaining_courses": 244,
+ "already_venture_through_twin": 0,
+ "census_items": 244,
+ "decoys": {
+  "n": 50,
+  "pool": 70093,
+  "seed": 20261108,
+  "definition": "described art-unit courses at the 231, outside the stratum, never coded in round 1, S5 or round 2"
+ },
+ "shuffle_seed": 20261109,
+ "public_items": 294,
+ "sealed_sha256": "8472639745e2e640a7059ff754363dee6f67332de6d59bdcbf28eb3b422accdb"
+}
