@@ -1,0 +1,23 @@
+{
+  "note": "Case-insensitive regular expressions applied to art-unit course titles; a title may match more than one subject. Exploratory; not validated by human coders (Online Appendix H).",
+  "rules": {
+    "Film and video": "\\bfilm|cinema|screenwrit|video(?! ?gam)",
+    "Photography": "photo",
+    "Graphic and communication design": "graphic design|typograph|communication design|visual communication",
+    "Drawing": "drawing",
+    "Painting": "painting",
+    "Animation": "animat",
+    "Sculpture": "sculpt",
+    "Ceramics": "ceramic",
+    "Printmaking": "printmak|print media|intaglio|lithograph|screenprint",
+    "Fashion": "fashion|apparel|garment",
+    "Game design and interactive media": "\\bgam(e|es|ing)\\b|gameplay|interactive",
+    "UX, UI, and interaction design": "\\bUX\\b|\\bUI\\b|user experience|interaction design|interface",
+    "Virtual, augmented, and immersive media": "\\bVR\\b|\\bAR\\b|\\bXR\\b|virtual reality|augmented|immersive|extended reality",
+    "Artificial intelligence, machine learning, generative tools": "\\bA\\.?I\\.?\\b|artificial intelligence|machine learning|generative|neural|creative coding|algorithm",
+    "3-D printing and digital fabrication": "3-?D print|digital fabrication|CNC|laser|rapid prototyp",
+    "Sustainability and ecology": "sustainab|ecolog|climate|environmental (justice|ethics|issues|humanities|activism|art\\b|arts\\b)|eco-?(art|design)",
+    "Social practice and community art": "social practice|socially engaged|community[- ](based|engaged|engagement|art|arts|practice|project|projects|partnership|partnerships)|arts? (in|and) (the )?communit|civic|public art|participatory",
+    "Accessibility and disability": "accessib|disabilit|inclusive design|universal design"
+  }
+}

@@ -1,0 +1,8 @@
+Source,Search,Hits,Screened,Meeting criterion
+OpenAlex,"""arts entrepreneurship"" in title or abstract, 2000–2026",267,Titles of first 100,0
+OpenAlex,"""arts entrepreneurship"" with ""education outcome"" (full text), 2000–2026",595,Titles of top 50 by relevance,0
+OpenAlex,"(magnet OR radiant) AND (university-wide OR cross-campus) AND entrepreneurship, 2000–2026",85,85 titles,0
+OpenAlex,"*Artivate* (all issues), ""arts entrepreneurship""",116,Titles,0
+Web search,"*Artivate* site search: entrepreneurship education, comparison, business school",—,9,0
+Web search,"ERIC-indexed records: ""arts entrepreneurship"" education outcomes",—,9,0
+Web search,Named-candidate searches (arts or music entrepreneurship teaching in arts units versus business schools),—,About 18 results; 9 candidates examined,0
