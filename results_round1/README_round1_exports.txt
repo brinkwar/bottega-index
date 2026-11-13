@@ -1,0 +1,4 @@
+Round-one coder exports (reliability study, September-October 2026), converted from each coder's exported JSON to CSV without changing any answer.
+Files: round1_<set>_<coder>.csv. Sets: main (the sealed stratified sample), calibration (30-item calibration set), supplementary (every course the classifier marked self or audience).
+Coders are identified by code only (R1, R2, R3, R4). R3 was excluded from the reliability estimates under two answer-independent protocol criteria (unused cannot-tell flag; sub-three-second answers); R3's files carry "_excluded" in their names and are kept as a sensitivity row.
+Columns: coder, set, item_id, then the coder's marks (T, P, V, S, A = technology, practice/employment, venture, self, audience; 1 = marked), any flags, and timing fields as exported by the coding tool.
